@@ -5,7 +5,7 @@ import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-def generate_route(carla_map, start_coords, end_coords, max_dist=500, wp_separation=2.0):
+def generate_route(carla_map, start_coords, end_coords, max_dist=1000, wp_separation=2.0):
   
     """
       차량이 주행할 target route 생성 및 시각화 
@@ -78,7 +78,7 @@ def generate_route(carla_map, start_coords, end_coords, max_dist=500, wp_separat
         same_lane_waypoints = [wp for wp in next_waypoints if wp.lane_id == initial_lane_id]
         
         if not same_lane_waypoints:
-            print(f"경고: 차선 {initial_lane_id}에 다음 웨이포인트가 없습니다. 사용 가능한 웨이포인트 사용.")
+            # print(f"경고: 차선 {initial_lane_id}에 다음 웨이포인트가 없습니다. 사용 가능한 웨이포인트 사용.")
             candidate_waypoints = next_waypoints
         else:
             candidate_waypoints = same_lane_waypoints
@@ -134,7 +134,44 @@ def generate_route(carla_map, start_coords, end_coords, max_dist=500, wp_separat
         return route_waypoints
 
     return route_waypoints
-        
+
+def generate_long_route(carla_map, points, wp_separation=2.0, max_dist=500):
+    full_route = []
+    last_wp = None
+
+    for i in range(len(points) - 1):
+        if i == 0:
+            # 첫 구간은 기존대로
+            seg = generate_route(
+                carla_map,
+                start_coords=points[0],
+                end_coords=points[1],
+                max_dist=max_dist,
+                wp_separation=wp_separation,
+            )
+        else:
+            # 다음 구간 시작을 '직전 세그먼트 마지막 WP 위치'로
+            lw = full_route[-1].transform.location
+            start_coords = (lw.x, lw.y, lw.z)
+            seg = generate_route(
+                carla_map,
+                start_coords=start_coords,   
+                end_coords=points[i + 1],
+                max_dist=max_dist,
+                wp_separation=wp_separation,
+            )
+
+        if not seg or len(seg) < 2:
+            raise RuntimeError(f"경로 실패: {points[i]} → {points[i+1]}")
+
+        if i == 0:
+            full_route.extend(seg)
+        else:
+            full_route.extend(seg[1:]) 
+
+    return full_route
+
+    
 
 def visualize_all_waypoints(carla_map, separation=2.0, save_dir="./plots"):
     """

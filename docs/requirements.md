@@ -24,5 +24,5 @@
 - [X] PID 제어 파라미터 변경하며 데이터 수집 
       - 수집 데이터 : 매 step에서의 앞선 15개 waypoint 위치 정보, 그 행동의 reward 값(강화학습과 동일한 reward function), steer & throttle 값 
 - [X] pid 제어 파라미터 로그, 결과 plot 구조적으로 저장
-- [ ] 강화학습 학습 루프 설정 - offline model pretrain, SAC 학습
+- [X] 강화학습 학습 루프 설정 - offline model pretrain, SAC 학습
 - [ ] 학습 로깅 설정 - wandb

@@ -58,7 +58,8 @@ def pid_control(start_coords, end_coords , filename):
         
         client, world, carla_map = connect_to_carla()
         blueprint_library = world.get_blueprint_library()
-
+        visualize_all_waypoints(carla_map)
+    
         start = start_coords 
         end = end_coords 
         
@@ -72,15 +73,15 @@ def pid_control(start_coords, end_coords , filename):
         vehicle = spawn_vehicle(world, blueprint_library, spawn_transform)
         collision_sensor, collision_event = attach_collision_sensor(world, vehicle)
         # camera_sensor = attach_camera_sensor(world, vehicle, save_path="logs/driving_scene")
-    
+        
         actual_path_x = []
         actual_path_y = []
         
-        run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_y, collision_event,kp_s, ki_s, kd_s, ke, kp_t, ki_t, kd_t, a ,filename)
+        run_pid_drive_with_log(world, vehicle, route_waypoints, actual_path_x, actual_path_y, collision_event,kp_s, ki_s, kd_s, ke, kp_t, ki_t, kd_t, a ,filename)
         a += 1
         vehicle.destroy()
         collision_sensor.destroy()
-        generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y, "PID_control")
+        generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y,  filename)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -90,13 +91,13 @@ if __name__ == "__main__":
     mode = sys.argv[1].upper()
 
     if mode == "PID":
-        # start_coords = (150, 50)
-        # end_coords = (200, 50)
-        # pid_control(start_coords, end_coords, "circle")
+        start_coords = (150, 50)
+        end_coords = (200, 50)
+        pid_control(start_coords, end_coords, "route_1")
         
-        # start_coords = (-125, 0)
-        # end_coords = (0, -70)
-        # pid_control(start_coords, end_coords, "curve_90")
+        start_coords = (-125, 0)
+        end_coords = (0, -70)
+        pid_control(start_coords, end_coords, "route_2")
         
         start_coords = (150, 50)
         end_coords = (50, 125) 

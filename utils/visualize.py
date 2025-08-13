@@ -29,7 +29,7 @@ def plot_carla_map(carla_map, save_path="logs/route_visualization/carla_map.png"
     plt.close()
 
   
-def generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y, simulation_category , timestamp=None):
+def generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y, simulation_category, timestamp=None):
     """
       시뮬레이션 동안의 차량의 주행 경로를 시각화하여 저장 
     """

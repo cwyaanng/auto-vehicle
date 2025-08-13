@@ -16,16 +16,16 @@ class SACOfflineOnline:
       "MlpPolicy",
       env,
       learning_starts=0,
-      buffer_size=buffer_size, # replay buffer size 
+      buffer_size=buffer_size,
       tau=tau,
       verbose=verbose,
       ## wandb 적용 ## 
     )
-    self.actor = self.model.policy.actor # 정책 네트워크
-    self.critic = self.model.policy.critic # Twin-Q 네트워크 
+    self.actor = self.model.policy.actor 
+    self.critic = self.model.policy.critic  
     self.critic_target = self.model.policy.critic_target
-    self.actor_opt = self.actor.optimizer # 정책을 업데이트하는 torch 옵티마이저 
-    self.critic_opt = self.critic.optimizer # critic을 업데이트하는 torch 옵티마이저 
+    self.actor_opt = self.actor.optimizer 
+    self.critic_opt = self.critic.optimizer 
     
     self.gamma = float(self.model.gamma)
     self.tau = float(self.model.tau)
@@ -34,16 +34,15 @@ class SACOfflineOnline:
   
     self.auto_alpha = self.model.ent_coef_optimizer is not None
     if self.auto_alpha:
-      self.long_ent_coef = self.model.log_ent_coef
+      self.log_ent_coef = self.model.log_ent_coef
       self.ent_coef_opt = self.model.ent_coef_optimizer
       self.target_entropy = self.model.target_entropy 
-      
-    # 엔트로피 계수 α 설정 방식(자동/고정) 확인
-    self.auto_alpha = self.model.ent_coef_optimizer is not None  # 자동 튜닝이면 옵티마이저가 존재함
+  
+    self.auto_alpha = self.model.ent_coef_optimizer is not None  
     if self.auto_alpha:
-        self.log_ent_coef = self.model.log_ent_coef      # 학습되는 log(α) 파라미터(텐서)
-        self.ent_coef_opt = self.model.ent_coef_optimizer# log(α)를 업데이트하는 옵티마이저
-        self.target_entropy = self.model.target_entropy  # 목표 엔트로피(액터 무작위성 목표치, -|A| 근처)
+        self.log_ent_coef = self.model.log_ent_coef     
+        self.ent_coef_opt = self.model.ent_coef_optimizer
+        self.target_entropy = self.model.target_entropy  
         
   """
     오프라인 critic 학습 루프 
@@ -54,7 +53,7 @@ class SACOfflineOnline:
       if self.auto_alpha:
           with th.no_grad():
               return self.log_ent_coef.exp().detach()
-      # SB3 1.5에서 ent_coef가 float이 아닐 수도 있어 안전하게 처리
+    
       val = float(self.model.ent_coef) if isinstance(self.model.ent_coef, (int, float)) else 0.2
       return th.tensor(val, device=self.device)
 
@@ -89,7 +88,16 @@ class SACOfflineOnline:
 
           # add(obs, next_obs, action, reward, done) in replay buffer
           for o, no, a, r, d in zip(obs, nobs, acts, rews, dones):
-              self.model.replay_buffer.add(o, no, a, float(r), bool(d))
+            self.model.replay_buffer.add(
+                o[None, :],            # (1, obs_dim)
+                no[None, :],           # (1, obs_dim)
+                a[None, :],            # (1, act_dim)
+                np.array([float(r)], dtype=np.float32),   # (1,)
+                np.array([bool(d)], dtype=np.float32),    # (1,)
+                [ {"TimeLimit.truncated": False} ]        # ★ 리스트 안에 dict 하나
+            )
+
+
           n_added += N
           n_files += 1
 
@@ -112,7 +120,9 @@ class SACOfflineOnline:
               next_actions, next_logp = self.actor.action_log_prob(batch.next_observations)
               # 다음 상태 s'에서 현재 정책 π로 행동 a' 샘플 + log π(a'|s') 계산
               # SAC는 확률정책이라 action과 log_prob을 함께 얻습니다.
-              
+              if next_logp.dim() == 1:
+                next_logp = next_logp.view(-1, 1)
+                
               tq1, tq2 = self.critic_target(batch.next_observations, next_actions)
               # 타겟 크리틱 추정값 
               
