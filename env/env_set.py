@@ -1,5 +1,6 @@
 import carla 
 import os 
+from datetime import datetime
 
 def connect_to_carla(host='localhost', port=2000):
     """
@@ -49,7 +50,6 @@ def attach_camera_sensor(world, vehicle, image_width=800, image_height=600, fov=
       카메라 센서를 차량에 부착 
       카메라 센서가 새로운 이미지 프레임을 캡처할 때마다 콜백 함수 자동 호출 
     """
-    
     os.makedirs(save_path, exist_ok=True)
     blueprint_library = world.get_blueprint_library()
     camera_bp = blueprint_library.find('sensor.camera.rgb')
@@ -66,7 +66,8 @@ def attach_camera_sensor(world, vehicle, image_width=800, image_height=600, fov=
     camera = world.spawn_actor(camera_bp, camera_transform, attach_to=vehicle)
 
     def _on_image(image):
-        filename = f"{save_path}/frame_{image.frame:06d}.png"
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"{save_path}/{timestamp}_{image.frame:06d}.png"
         image.save_to_disk(filename)
         print(f"이미지 저장됨: {filename}")
 

@@ -66,7 +66,6 @@ def make_obs_from_waypoints(waypoints, e, theta_e):
 
 
 def compute_errors(vehicle, target_wp):
-  
     """
     자율주행 차량 제어에서 필요한 에러 계산 
     lateral error (차량이 목표 경로에서 얼마나 옆으로 벗어났는지)
@@ -103,8 +102,7 @@ def compute_errors(vehicle, target_wp):
 
     return lateral_error, heading_error
 
-
-def compute_reward(obs, vehicle, collided=False, lane_out=False, car_sleep=0):
+def compute_reward(obs, vehicle, collided=False, reached=False):
     """
     주행 리워드 계산
     """
@@ -120,15 +118,12 @@ def compute_reward(obs, vehicle, collided=False, lane_out=False, car_sleep=0):
     reward = speed * np.cos(angle_diff) - 2.0 * angle_penalty - 1.0 * offset_penalty - 1.0 * curvature_penalty
 
     if collided:
-        reward = -200.0
+        reward = -200.0  # 큰 패널티
+
+    if reached:
+        reward = 200.0   # 큰 보상
 
     return reward
-
-def is_done(collision_event):
-    if collision_event['collided']:
-        return True
-    return False
-
 
 def save_episode_as_npz(path, data_dict):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -191,9 +186,7 @@ def pid_throttle_control(target_speed, current_speed, prev_error, integral, dt ,
 
     return throttle, brake, error, integral
 
-
-
-def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_y, collision_event, kp_s, ki_s, kd_s, ke, kp_t, ki_t, kd_t, max_steps=1000 ,output_dir = "dataset"):
+def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_y, collision_event, kp_s, ki_s, kd_s, ke, kp_t, ki_t, kd_t, num, filename, max_steps=1000 ,output_dir = "dataset" ):
   
     """
       PID 기반 주행 시뮬레이션 로직 : grid search로 1000가지 수행, 1000 step 동안 
@@ -210,11 +203,13 @@ def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_
     
     obs_buf, act_buf, rew_buf, next_obs_buf, done_buf = [], [], [], [], []
     
+    last_idx = len(route_waypoints) - 1
+    
     for t in range(max_steps):
+        
         loc = vehicle.get_location()
         vel = vehicle.get_velocity()
         speed = np.linalg.norm([vel.x, vel.y, vel.z])  # 현재 속도 (m/s)
-
         
         waypoints_ahead = find_closest_waypoints_ahead(loc, route_waypoints)
         idx = find_closest_waypoint_index(loc, route_waypoints)
@@ -243,8 +238,11 @@ def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_
         ne, ntheta_e = compute_errors(vehicle, next_target_wp)
         next_obs = make_obs_from_waypoints(next_waypoints, ne , ntheta_e)
         
-        reward = compute_reward(obs, vehicle, collided=collision_event['collided'])
-        done= is_done(collision_event)
+        collided = collision_event['collided']
+        reached = (target_idx >= last_idx)  # 타겟이 마지막 웨이포인트에 도달
+        done = collided or reached
+        
+        reward = compute_reward(obs, vehicle, collided=collided, reached=reached)
 
         obs_buf.append(obs)
         act_buf.append([steer, throttle])
@@ -252,19 +250,22 @@ def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_
         next_obs_buf.append(next_obs)
         done_buf.append(done)
         
-        
         actual_path_x.append(loc.x)
         actual_path_y.append(loc.y)
 
-        if collision_event['collided']:
-            print(f"[{t}] collision occur - simulation stop")
+        if done:
+            if collided:
+                print(f"[{t}] collision occur - simulation stop")
+            elif reached:
+                print(f"[{t}] goal reached - simulation stop")
             break
+                
 
         print(f"[{t}] steer={steer:.2f}, throttle={throttle:.2f}, brake={brake:.2f}, speed={speed:.2f}m/s, e={e:.2f}, θe={np.degrees(theta_e):.2f}°")
         time.sleep(dt)
         
     save_episode_as_npz(
-        f"{output_dir}/episode_{idx:04d}.npz",
+        f"{output_dir}/{filename}_route_episode_{num:04d}.npz",
         {
             "observations": np.array(obs_buf),
             "actions": np.array(act_buf),
@@ -274,7 +275,7 @@ def run_pid_drive_with_log(vehicle, route_waypoints, actual_path_x, actual_path_
         }
     )
     
-    print(f"[SAVE] episode_{idx:04d}.npz 저장 완료!")
+    print(f"[SAVE] {filename}_route_episode_{num:04d}.npz 저장 완료!")
     print(f"  - observations: {len(obs_buf)}개")
     print(f"  - actions: {len(act_buf)}개")
     print(f"  - rewards: {len(rew_buf)}개")

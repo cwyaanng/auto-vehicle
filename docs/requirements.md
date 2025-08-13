@@ -3,10 +3,12 @@
 # 파일 구조
 - agents : 제어 모델 
   - pid_control.py : pid 기반 제어 로직 
+  - run_sac.py : sac 모델 학습 루프
 
 - env : carla 환경 세팅 및 경로 세팅
   - route.py : 경로 생성 
   - env_set.py : carla 환경, 차량 에이전트 설정 
+  - wrapper.py : 모델 학습 env 설정 
 
 - logs : 실험 로그, 결과 저장
 
@@ -22,3 +24,5 @@
 - [X] PID 제어 파라미터 변경하며 데이터 수집 
       - 수집 데이터 : 매 step에서의 앞선 15개 waypoint 위치 정보, 그 행동의 reward 값(강화학습과 동일한 reward function), steer & throttle 값 
 - [X] pid 제어 파라미터 로그, 결과 plot 구조적으로 저장
+- [ ] 강화학습 학습 루프 설정 - offline model pretrain, SAC 학습
+- [ ] 학습 로깅 설정 - wandb

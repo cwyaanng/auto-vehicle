@@ -114,59 +114,6 @@ def generate_route(carla_map, start_coords, end_coords, max_dist=500, wp_separat
         print(f"최대 탐색 거리({max_dist})에 도달")
     
     print(f"경로 생성 완료: {len(route_waypoints)}개 웨이포인트, 목적지까지 최소 거리: {min_distance_to_goal:.2f}m")
-  
-    # plt.figure(figsize=(15, 12))
-    
-    # route_x = [wp.transform.location.x for wp in route_waypoints]
-    # route_y = [wp.transform.location.y for wp in route_waypoints]
-    # total = [route_x,route_y]
-  
-    # plt.plot(route_x, route_y, 'b-', linewidth=3, label='Generated Route')
-    
-    # start_loc = route_waypoints[0].transform.location
-    # yaw_deg = route_waypoints[0].transform.rotation.yaw
-    # yaw_rad = np.deg2rad(yaw_deg)
-    # arrow_length = 5.0
-    # dx = arrow_length * np.cos(yaw_rad)
-    # dy = arrow_length * np.sin(yaw_rad)
-    # plt.arrow(start_loc.x, start_loc.y, dx, dy,
-    #           head_width=1.0, head_length=1.5, fc='magenta', ec='magenta', label='Spawn Direction')
-    
-    # plt.scatter(route_waypoints[0].transform.location.x, route_waypoints[0].transform.location.y, color='green', s=200, marker='*', label='Start')
-    
-    # plt.scatter(route_waypoints[-1].transform.location.x, route_waypoints[-1].transform.location.y, color='red', s=200, marker='*', label='Destination')
-    
-    # wp_indices = list(range(0, len(route_waypoints), 10))
-    # if len(route_waypoints) - 1 not in wp_indices:
-    #     wp_indices.append(len(route_waypoints) - 1)
-    
-    # for i in wp_indices:
-    #     wp = route_waypoints[i]
-    #     plt.scatter(wp.transform.location.x, wp.transform.location.y, color='orange', s=50)
-    #     plt.text(wp.transform.location.x + 2, wp.transform.location.y + 2, str(i), fontsize=9)
-        
-    # plt.title('Generated Route from Start to Destination', fontsize=16)
-    # plt.xlabel('X (meters)', fontsize=14)
-    # plt.ylabel('Y (meters)', fontsize=14)
-    # plt.grid(True, alpha=0.3)
-    # plt.legend(fontsize=12)
-    
-    # # 축 비율 동일하게 설정
-    # plt.axis('equal')
-    
-    # # 저장 디렉토리 생성
-    # route_viz_dir = "logs/route_visualization"
-    # os.makedirs(route_viz_dir, exist_ok=True)
-    
-    # # 저장
-    # plt.savefig(os.path.join(route_viz_dir, f'route_map_{timestamp}.png'), dpi=300)
-    # print(f"경로 시각화가 저장되었습니다: {os.path.join(route_viz_dir, f'route_map_{timestamp}.png')}")
-    
-    # plt.close()
-    # if len(route_waypoints) < 2:
-    #     print("유효한 경로 생성 못함")
-    #     return
-    
     
     if len(route_waypoints) >= 2:
  
@@ -188,3 +135,43 @@ def generate_route(carla_map, start_coords, end_coords, max_dist=500, wp_separat
 
     return route_waypoints
         
+
+def visualize_all_waypoints(carla_map, separation=2.0, save_dir="./plots"):
+    """
+    CARLA 맵의 모든 waypoint를 시각화하여 plot으로 저장하는 함수
+
+    Args:
+        carla_map: carla.Map 객체
+        separation: waypoint 간격 (미터)
+        save_dir: 이미지 저장 디렉토리
+    """
+    try:
+        # Waypoint 생성
+        all_wps = carla_map.generate_waypoints(separation)
+
+        xs = [wp.transform.location.x for wp in all_wps]
+        ys = [wp.transform.location.y for wp in all_wps]
+
+        # 시각화
+        plt.figure(figsize=(10, 10))
+        plt.scatter(xs, ys, s=5, c="blue", alpha=0.6, label="Waypoints")
+        plt.xlabel("X (meters)")
+        plt.ylabel("Y (meters)")
+        plt.title(f"CARLA Map Waypoints (Separation={separation}m)")
+        plt.legend()
+        plt.axis("equal")
+
+        # 저장 디렉토리 생성
+        os.makedirs(save_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        file_path = os.path.join(save_dir, f"carla_map_waypoints_{timestamp}.png")
+
+        plt.savefig(file_path, dpi=300)
+        plt.close()
+
+        print(f"Waypoint 시각화 저장 완료: {file_path}")
+        return file_path
+
+    except Exception as e:
+        print(f"Waypoint 시각화 중 오류 발생: {e}")
+        return None
