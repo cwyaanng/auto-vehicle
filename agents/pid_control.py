@@ -52,8 +52,6 @@ def make_obs_from_waypoints(vehicle, waypoints, e, theta_e):
         waypoints : list of carla.Waypoint (앞선 num_ahead개)
         e : lateral error (compute_errors() 리턴 1)
         theta_e : heading error (compute_errors() 리턴 2)
-    Returns:
-        obs : np.ndarray(dtype=float32)
     """
     # 차량 pose
     tf = vehicle.get_transform()
@@ -67,7 +65,7 @@ def make_obs_from_waypoints(vehicle, waypoints, e, theta_e):
 
     for wp in waypoints:
         if wp is None or not hasattr(wp, 'transform'):
-            obs.extend([0.0, 0.0])  # rel_x, rel_y
+            obs.extend([0.0, 0.0])
         else:
             loc = wp.transform.location
             dx = loc.x - vehicle_loc.x
@@ -77,7 +75,6 @@ def make_obs_from_waypoints(vehicle, waypoints, e, theta_e):
             rel_y = dx * sin_yaw + dy * cos_yaw
             obs.extend([rel_x, rel_y])
 
-    # e, theta_e 추가
     obs.extend([e, theta_e])
     
     obs_array = np.array(obs, dtype=np.float32)

@@ -20,7 +20,6 @@ def connect_to_carla(host='localhost', port=2000):
 def spawn_vehicle(world, blueprint_library, transform):
     """
       차량 객체를 시뮬레이션 월드에 spawn 
-      
       return :
         vehicle : 차량 
     """

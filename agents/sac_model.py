@@ -19,7 +19,7 @@ class SACOfflineOnline:
       buffer_size=buffer_size,
       tau=tau,
       verbose=verbose,
-      ## wandb 적용 ## 
+      tensorboard_log=tensorboard_log
     )
     self.actor = self.model.policy.actor 
     self.critic = self.model.policy.critic  
@@ -48,7 +48,6 @@ class SACOfflineOnline:
     오프라인 critic 학습 루프 
   """
   
-  # 온도 파라미터를 안전하게 가져오는 함수 
   def _alpha(self):
       if self.auto_alpha:
           with th.no_grad():
@@ -57,7 +56,6 @@ class SACOfflineOnline:
       val = float(self.model.ent_coef) if isinstance(self.model.ent_coef, (int, float)) else 0.2
       return th.tensor(val, device=self.device)
 
-  # ---------- 데이터 프리필: 폴더 내 *.npz을 스트리밍으로 버퍼에 적재 ----------
   def prefill_from_npz_folder(self, data_dir, clip_actions=True):
       files = sorted(glob.glob(os.path.join(data_dir, "*.npz")))
       if not files:
@@ -67,9 +65,7 @@ class SACOfflineOnline:
       act_high = getattr(self.env.action_space, "high", None)
 
       n_added, n_files = 0, 0
-      # n_added: 총 몇 개 전이를 버퍼에 넣었는지 세는 카운터
-      # n_files: 총 몇 개 npz 파일을 읽었는지 카운터
-      
+
       for path in files:
           with np.load(path, allow_pickle=False) as d:
               obs  = d["observations"].astype(np.float32)
@@ -86,7 +82,6 @@ class SACOfflineOnline:
           if clip_actions and act_low is not None and act_high is not None:
               acts = np.clip(acts, act_low, act_high)
 
-          # add(obs, next_obs, action, reward, done) in replay buffer
           for o, no, a, r, d in zip(obs, nobs, acts, rews, dones):
             self.model.replay_buffer.add(
                 o[None, :],            # (1, obs_dim)
@@ -112,9 +107,6 @@ class SACOfflineOnline:
       self.actor.eval()
       for step in range(steps): # 오프라인 배치로 steps번 업데이트 
           batch = self.model.replay_buffer.sample(self.batch_size)
-          # 리플레이 버퍼에서 미니배치 샘플링
-          # batch는 (observations, actions, rewards, next_observations, dones) 텐서 묶음
-          # SB3가 자동으로 model.device(CPU/GPU)에 올려줌
 
           with th.no_grad():
               next_actions, next_logp = self.actor.action_log_prob(batch.next_observations)
@@ -145,7 +137,7 @@ class SACOfflineOnline:
           self.critic_opt.zero_grad() # 크리틱 옵티마이저 기울기 초기화
           critic_loss.backward() # 손실에 대한 역전파 
           self.critic_opt.step() # 한 스텝 최적화 
-
+          print(f"[CRITIC PRETRAIN] critic loss : {critic_loss}")
           if (step + 1) % polyak_every == 0:
               polyak_update(self.critic.parameters(), self.critic_target.parameters(), self.tau)
 
@@ -179,7 +171,7 @@ class SACOfflineOnline:
           actor_loss = (alpha * logp_pi - q_pi).mean()
           # SAC actor 목적: J_π = E[ α·logπ(a|s) - Q(s,a) ] 를 최소화
           # = 엔트로피(무작위성)를 키우되(Q가 큰 행동을 선호), Q가 큰 행동을 더 선택하도록 학습
-
+          print(f"[ACTOR PRETRAIN] actor loss : {actor_loss}")
           self.actor_opt.zero_grad() # 이전 step의 기울기 초기화(누적 방지)
           actor_loss.backward()  # 역전파: actor 파라미터에 대한 grad 계산
           self.actor_opt.step()  # 옵티마이저로 actor 파라미터 한 스텝 업데이트
@@ -201,7 +193,7 @@ class SACOfflineOnline:
   """ 
     ---------- Online 파인튜닝(표준 SB3 루프) ---------- 
   """
-  def online_learn(self, total_timesteps=300_000, tb_log_name="phase_online"):
+  def online_learn(self, total_timesteps, tb_log_name="phase_online"):
       self.model.learn(total_timesteps=total_timesteps, tb_log_name=tb_log_name)
 
   def save(self, path):

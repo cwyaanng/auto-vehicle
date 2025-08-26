@@ -4,3 +4,7 @@ dataset/
 logs/
 result.txt
 result2.txt
+logs/
+dataset_1/
+models/
+plots/

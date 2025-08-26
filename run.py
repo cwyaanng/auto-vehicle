@@ -89,7 +89,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     mode = sys.argv[1].upper()
-
+    print(mode)
     if mode == "PID":
         start_coords = (150, 50)
         end_coords = (200, 50)
@@ -110,5 +110,13 @@ if __name__ == "__main__":
         start_coords = (-150, 100)
         end_coords = (-100, 0) 
         pid_control(start_coords, end_coords, "route_5")
+    if mode == "COLLECTION":
+        # start_coords = (-100,-120)
+        # end_coords = (-100,-20)
+        # pid_control(start_coords, end_coords, "route_6")
+        
+        start_coords = (100,58)
+        end_coords = (100,80)
+        pid_control(start_coords, end_coords, "route_7")
     else:
         print(f"❌ wrong argument")

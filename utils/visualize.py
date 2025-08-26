@@ -64,3 +64,38 @@ def generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y, sim
     plt.close()
     print(f"실제 주행 경로가 시각화되어 저장됨: {save_path}")
 
+def generate_planned_path_plot(route_waypoints, simulation_category, timestamp=None):
+
+    if timestamp is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    plt.figure(figsize=(15, 12))
+
+    route_x = [wp.transform.location.x for wp in route_waypoints]
+    route_y = [wp.transform.location.y for wp in route_waypoints]
+    
+    plt.plot(route_x, route_y, 'b-', linewidth=2, label='Planned Route')
+
+    plt.scatter(route_x[0], route_y[0], color='green', s=300, marker='*', label='Start')  # 별 크기도 키움
+    plt.scatter(route_x[-1], route_y[-1], color='red', s=300, marker='*', label='End')
+
+    plt.xlabel('X (m)', fontsize=30)
+    plt.ylabel('Y (m)', fontsize=30)
+    plt.title('Planned Route', fontsize=30)
+
+    plt.grid(True)
+    plt.legend(
+    fontsize=30,
+    loc='upper left',             # 기준 위치 (왼쪽 위)
+    bbox_to_anchor=(1.05, 1)      # (x, y) 비율 좌표. 1.05는 그래프 오른쪽 밖으로 살짝 밀어내는 효과
+    )
+    plt.xticks(fontsize=30)
+    plt.yticks(fontsize=30)
+    plt.axis('equal')
+
+    os.makedirs(f"logs/planned_route_visualization/{simulation_category} planned route/_{timestamp}", exist_ok=True)
+    save_path = f"logs/planned_route_visualization/{simulation_category} planned route/_{timestamp}/actual_vs_planned_{timestamp}.png"
+    plt.savefig(save_path, dpi=300)
+    plt.close()
+    print(f"실제 주행 경로가 시각화되어 저장됨: {save_path}")
+
