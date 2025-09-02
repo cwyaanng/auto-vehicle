@@ -5,33 +5,3 @@ nohup: ignoring input
 [forward] 경로 생성: 1001 wp, 총 거리 2036.9 m
 Using cuda device
 직선 데이터 버퍼에 저장
-직선 주행 데이터 actor behavioral cloning
-[BC pretrain] step 0 | loss: 1.0573
-[BC pretrain] step 500 | loss: 0.0230
-[BC pretrain] step 1000 | loss: 0.0244
-[BC pretrain] step 1500 | loss: 0.0205
-[BC pretrain] step 2000 | loss: 0.0211
-[BC pretrain] step 2500 | loss: 0.0191
-[BC pretrain] step 3000 | loss: 0.0199
-[BC pretrain] step 3500 | loss: 0.0217
-[BC pretrain] step 4000 | loss: 0.0203
-[BC pretrain] step 4500 | loss: 0.0188
-[BC pretrain] step 5000 | loss: 0.0160
-[BC pretrain] step 5500 | loss: 0.0187
-[BC pretrain] step 6000 | loss: 0.0158
-[BC pretrain] step 6500 | loss: 0.0148
-[BC pretrain] step 7000 | loss: 0.0204
-[BC pretrain] step 7500 | loss: 0.0151
-[BC pretrain] step 8000 | loss: 0.0145
-[BC pretrain] step 8500 | loss: 0.0129
-[BC pretrain] step 9000 | loss: 0.0127
-[BC pretrain] step 9500 | loss: 0.0161
-critic pretrain => warm start
-Traceback (most recent call last):
-  File "run_sacrnd.py", line 87, in <module>
-    main(batch_size)
-  File "run_sacrnd.py", line 63, in main
-    trainer.pretrain_critic(steps=10000)
-  File "/home/jingjingee198/auto-vehicle/agents/sacrnd_model.py", line 263, in pretrain_critic
-  File "/home/jingjingee198/auto-vehicle/agents/sacrnd_model.py", line 234, in update_rnd_with_critic_batch
-AttributeError: 'SACOfflineOnline' object has no attribute '_normalize_tensor'

@@ -70,6 +70,10 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
+        
+        self.obs_rms = RunningMeanStd()
+        self.act_rms = RunningMeanStd()
+
 
         
 
@@ -144,6 +148,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                     np.array([bool(d)], np.float32),      # (1,)
                     [{"TimeLimit.truncated": False}],     # info list 길이 = n_envs(=1)
                 )
+                self.obs_rms.update(th.tensor(o).unsqueeze(0))  # shape (1, obs_dim)
+                self.act_rms.update(th.tensor(a).unsqueeze(0))  # shape (1, act_dim)
             n_added += N
             n_files += 1
 
@@ -192,6 +198,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                     np.array([bool(d)], np.float32),      # (1,)
                     [{"TimeLimit.truncated": False}],     # info list 길이 = n_envs(=1)
                 )
+                self.obs_rms.update(th.tensor(o).unsqueeze(0))  # shape (1, obs_dim)
+                self.act_rms.update(th.tensor(a).unsqueeze(0))  # shape (1, act_dim)
             n_added += N
             n_files += 1
 
