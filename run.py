@@ -1,7 +1,7 @@
 import os
 import sys
 # 현재 디렉토리에서 carla-*.egg 파일 경로를 자동으로 찾아서 sys.path에 추가
-sys.path.append('/home/wise/chaewon/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
+sys.path.append('/home/jingjingee198/auto-vehicle/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
 import carla
 
 from agents.pid_control import run_pid_drive_with_log
@@ -111,9 +111,9 @@ if __name__ == "__main__":
         end_coords = (-100, 0) 
         pid_control(start_coords, end_coords, "route_5")
     if mode == "COLLECTION":
-        # start_coords = (-100,-120)
-        # end_coords = (-100,-20)
-        # pid_control(start_coords, end_coords, "route_6")
+        start_coords = (-100,-120)
+        end_coords = (-100,-20)
+        pid_control(start_coords, end_coords, "route_6")
         
         start_coords = (100,58)
         end_coords = (100,80)

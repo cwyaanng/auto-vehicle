@@ -1,8 +1,7 @@
 import os, sys
 
 from agents.rnd import RND
-
-sys.path.append('/home/wise/chaewon/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
+sys.path.append('/home/jingjingee198/auto-vehicle/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
 import carla  
 import gym
 import numpy as np
@@ -18,12 +17,13 @@ from datetime import datetime
 DATA_DIR = "dataset_1"  
 SIMULATION = "SAC_RND_TESTING_CRITIC"
 NOW = ""
+
 def make_env(batch_size):
     NOW = str(datetime.now())
     # carla 연결 
     client, world, carla_map = connect_to_carla()
     # 주행 시작 포인트 
-    start_point = (0, 0)
+    start_point = (-98, 20)
     
     # 강화학습 환경 생성 
     env = CarlaWrapperEnv(
@@ -52,7 +52,7 @@ def main(batch_size):
     # 강화학습 모델 생성 
     trainer = SACOfflineOnline(env=env, buffer_size=1_000_000, batch_size=batch_size, tau=0.005, verbose=1, tensorboard_log="logs/"+SIMULATION+"/"+NOW)
     
-    obs_dim = env.observation_space.shape[0] + env.action_space.shape[0]
+    obs_dim = env.observation_space.shape[0] # + env.action_space.shape[0]
     rnd = RND(obs_dim, lr=1e-3, device=str(trainer.device))
    
    # pretrain with only route 6 data 
