@@ -9,6 +9,21 @@ import torch.nn.functional as F
 from stable_baselines3 import SAC
 from stable_baselines3.common.type_aliases import ReplayBufferSamples
 from stable_baselines3.common.utils import polyak_update 
+import torch.nn as nn
+
+class MCNet(nn.Module):
+    def __init__(self, input_dim: int, hidden_dims=[256, 256]):
+        super().__init__()
+        layers = []
+        dims = [input_dim] + hidden_dims
+        for i in range(len(dims) - 1):
+            layers += [nn.Linear(dims[i], dims[i+1]), nn.ReLU()]
+        layers.append(nn.Linear(dims[-1], 1))  # output: MC return
+        self.model = nn.Sequential(*layers)
+        self.optimizer = th.optim.Adam(self.parameters(), lr=3e-4)
+
+    def forward(self, x):
+        return self.model(x)
 
 
 class RunningMeanStd:
@@ -53,7 +68,9 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self._mc_cached_pos  = -1
         self._mc_cached_full = False
 
-        self._mc_returns: Optional[np.ndarray] = None # mc 리턴 캐시 
+        self.mc_targets = []
+        self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
+
         
 
     def _alpha(self) -> th.Tensor: # 현재 엔트로피 계수 얻기 
@@ -63,6 +80,26 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         if isinstance(self.ent_coef, (int, float)):
             return th.tensor(float(self.ent_coef), device=self.device)
         return self.ent_coef_tensor  
+   
+    # 몬테 카를로 리턴 계산
+    def compute_mc_returns(self, gamma: float, rewards: np.ndarray, dones: np.ndarray) -> np.ndarray:
+        mc = np.zeros_like(rewards, dtype=np.float32)
+        G = 0.0
+        for i in reversed(range(len(rewards))):
+            if bool(dones[i]):
+                G = float(rewards[i])
+            else:
+                G = float(rewards[i]) + gamma * G
+            mc[i] = G
+        return mc
+
+    
+    # SACOfflineOnline 클래스에 메서드 추가
+    def _normalize_tensor(self, x: th.Tensor, mean: np.ndarray, var: np.ndarray) -> th.Tensor:
+        eps = 1e-8
+        mean_t = th.tensor(mean, device=x.device, dtype=x.dtype)
+        std_t = th.sqrt(th.tensor(var, device=x.device, dtype=x.dtype) + eps)
+        return (x - mean_t) / std_t
 
     def attach_rnd(self, rnd) -> None: # 외부 RND 네트워크를 연결 
         self.rnd = rnd
@@ -110,8 +147,12 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             n_added += N
             n_files += 1
 
-        self._mc_returns = None
-        self._mc_cached_size = -1
+        mc_returns = self.compute_mc_returns(
+            gamma=self.gamma,
+            rewards=rews.flatten(),
+            dones=dones.flatten()
+        )
+        self.mc_targets.extend(mc_returns.tolist())
         return n_added
 
     # 다양한 경로에 해당하는 오프라인 파일만 버퍼에 집어넣기 
@@ -154,73 +195,56 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             n_added += N
             n_files += 1
 
-        self._mc_returns = None
-        self._mc_cached_size = -1
+        mc_returns = self.compute_mc_returns(
+            gamma=self.gamma,
+            rewards=rews.flatten(),
+            dones=dones.flatten()
+        )
+        self.mc_targets.extend(mc_returns.tolist())
         return n_added
 
     # 리플레이 버퍼 안에 있는 값들 중 observations 만 가져와서 학습함 
     def update_rnd_with_critic_batch(self, batch: ReplayBufferSamples) -> th.Tensor:
         if self.rnd is None:
             raise RuntimeError("RND is not attached. Call attach_rnd(rnd) first.")
-        # observation 텐서를 현재 학습 장치에 맞게 옮김
-        obs = batch.observations # batch_size * obs_dim
-        if obs.device != self.device:
-            obs = obs.to(self.device)
-        # predictor 네트워크 파라미터만 업데이트 
-        loss = self.rnd.update(obs)
+
+        obs = batch.observations.to(self.device)
+        act = batch.actions.to(self.device)
+
+        obs_n = self._normalize_tensor(obs, self.obs_rms.mean, self.obs_rms.var)
+        act_n = self._normalize_tensor(act, self.act_rms.mean, self.act_rms.var)
+        
+        x = th.cat([obs_n, act_n], dim=1)
+        loss = self.rnd.update(x)
+
         return loss.detach()
 
-    # 버퍼 안의 데이터에 대해서 monte carlo return 계산 
-    def compute_mc_returns_from_buffer(self, gamma: Optional[float] = None) -> np.ndarray:
-        
-        rb = self.replay_buffer
-        # 현재 버퍼에 실제로 들어있는 transition의 개수 
-        size = rb.buffer_size if rb.full else rb.pos
-        
-        # reward와 done 신호를 버퍼 안에 들어있는 데이터에 대해 가져오기
-        rewards = rb.rewards[:size]
-        dones = rb.dones[:size]
 
-        if rewards.ndim == 2 and rewards.shape[1] == 1:
-            rewards = rewards[:, 0]
-            dones = dones[:, 0]
+    def train_mcnet_from_buffer(self, epochs=5, batch_size=128):
+        self.mcnet.train()
+        dataset_size = len(self.mc_targets)
+        assert dataset_size == len(self.replay_buffer.observations), "mc_targets size mismatch"
 
-        # 몬테 카를로 리턴에서 감가율 설정 
-        if gamma is None:
-            gamma = float(self.gamma)
+        for epoch in range(epochs):
+            perm = np.random.permutation(dataset_size)
+            for i in range(0, dataset_size, batch_size):
+                idxs = perm[i:i + batch_size]
+                obs = self.replay_buffer.observations[idxs]
+                act = self.replay_buffer.actions[idxs]
+                target = th.tensor(np.array(self.mc_targets)[idxs], dtype=th.float32).unsqueeze(-1).to(self.device)
 
-        # 몬테 카를로 리턴 배열 초기화 
-        # mc[i] 라면 i번째 스텝에서 시작했을 때의 MC return 
-        mc = np.zeros_like(rewards, dtype=np.float32)
-        
-        # 뒤에서부터 리턴값을 누적해서 MC return을 구해준다
-        G = 0.0
-        for i in reversed(range(size)):
-            if bool(dones[i]):
-                G = float(rewards[i])
-            else:
-                G = float(rewards[i]) + gamma * G
-            mc[i] = G
+                obs_n = self._normalize_tensor(obs, self.obs_rms.mean, self.obs_rms.var)
+                act_n = self._normalize_tensor(act, self.act_rms.mean, self.act_rms.var)
+                x = th.cat([obs_n, act_n], dim=1)
 
-        # 결과 캐싱 
-        self._mc_returns = mc
-        self._mc_cached_size = size
-        self._mc_cached_pos  = rb.pos
-        self._mc_cached_full = rb.full
-        return mc
+                pred = self.mcnet(x)
+                loss = F.mse_loss(pred, target)
 
-    # monte carlo return이 최신 상태인지 확인하고 필요하면 새로 계산 
-    def _ensure_mc_returns_current(self) -> None:
-        rb = self.replay_buffer
-        size = rb.buffer_size if rb.full else rb.pos
-        must_recompute = (
-            self._mc_returns is None or
-            size != self._mc_cached_size or
-            rb.pos != self._mc_cached_pos or
-            rb.full != self._mc_cached_full
-        )
-        if must_recompute:
-            self.compute_mc_returns_from_buffer(gamma=float(self.gamma))
+                self.mcnet.optimizer.zero_grad()
+                loss.backward()
+                self.mcnet.optimizer.step()
+
+            print(f"[MCNet] Epoch {epoch+1}/{epochs} | Loss: {loss.item():.4f}")
 
     # 정책이 뽑은 행동 & 로그 확률 뽑기 
     @th.no_grad()

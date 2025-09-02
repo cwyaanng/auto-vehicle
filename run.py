@@ -58,7 +58,7 @@ def pid_control(start_coords, end_coords , filename):
         
         client, world, carla_map = connect_to_carla()
         blueprint_library = world.get_blueprint_library()
-        visualize_all_waypoints(carla_map)
+        # visualize_all_waypoints(carla_map)
     
         start = start_coords 
         end = end_coords 
@@ -111,9 +111,9 @@ if __name__ == "__main__":
         end_coords = (-100, 0) 
         pid_control(start_coords, end_coords, "route_5")
     if mode == "COLLECTION":
-        start_coords = (-100,-120)
-        end_coords = (-100,-20)
-        pid_control(start_coords, end_coords, "route_6")
+        # start_coords = (-100,-120)
+        # end_coords = (-100,-20)
+        # pid_control(start_coords, end_coords, "route_6")
         
         start_coords = (100,58)
         end_coords = (100,80)
