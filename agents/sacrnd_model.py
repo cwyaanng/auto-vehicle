@@ -387,9 +387,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
             # 수정: 정식 deterministic action 계산 방식
             with th.no_grad():
-                deterministic_action = self.policy.actor.get_action(
-                    replay_data.observations, deterministic=True
-                )
+                deterministic_action = self.policy._predict(replay_data.observations, deterministic=True)
 
             # (3) normalization 후 mcnet 입력
             obs_n = self._normalize_tensor(replay_data.observations, self.obs_rms.mean, self.obs_rms.var)

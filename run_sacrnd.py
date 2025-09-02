@@ -55,12 +55,18 @@ def main(batch_size):
     obs_dim = env.observation_space.shape[0] # + env.action_space.shape[0]
     rnd = RND(obs_dim, lr=1e-3, device=str(trainer.device))
    
-   # pretrain with only route 6 data 
+    print("직선 데이터 버퍼에 저장")
     trainer.prefill_from_npz_folder(DATA_DIR)
-    trainer.pretrain_mcnet_supervised(steps=500000)
+    print("직선 주행 데이터 actor behavioral cloning")
+    trainer.pretrain_actor(10000)
+    print("critic pretrain => warm start")
+    trainer.pretrain_critic(steps=10000)
+    
+    print("여러 주행 데이터로 mcnet 학습")  
+    trainer.replay_buffer.reset()
+    trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
+    trainer.pretrain_mcnet_supervised(steps=50000)
     trainer.attach_rnd(rnd)
-    trainer.pretrain_critic(steps=1000000)  
-    trainer.pretrain_actor(steps=1000000)
     
     trainer.save(f"pretrained_actor_critic_1M.zip")
     trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name=SIMULATION+str(batch_size))
