@@ -4,4 +4,32 @@ nohup: ignoring input
 [forward] steps 완료: traveled=2036.9 m, steps=1000
 [forward] 경로 생성: 1001 wp, 총 거리 2036.9 m
 Using cuda device
+cuda
 직선 데이터 버퍼에 저장
+직선 주행 데이터 actor behavioral cloning
+[BC pretrain] step 0 | loss: 0.3314
+[BC pretrain] step 500 | loss: 0.0241
+[BC pretrain] step 1000 | loss: 0.0257
+[BC pretrain] step 1500 | loss: 0.0225
+[BC pretrain] step 2000 | loss: 0.0169
+[BC pretrain] step 2500 | loss: 0.0178
+[BC pretrain] step 3000 | loss: 0.0179
+[BC pretrain] step 3500 | loss: 0.0203
+[BC pretrain] step 4000 | loss: 0.0192
+[BC pretrain] step 4500 | loss: 0.0159
+[BC pretrain] step 5000 | loss: 0.0165
+[BC pretrain] step 5500 | loss: 0.0150
+[BC pretrain] step 6000 | loss: 0.0184
+[BC pretrain] step 6500 | loss: 0.0150
+[BC pretrain] step 7000 | loss: 0.0154
+[BC pretrain] step 7500 | loss: 0.0140
+[BC pretrain] step 8000 | loss: 0.0137
+[BC pretrain] step 8500 | loss: 0.0166
+[BC pretrain] step 9000 | loss: 0.0113
+[BC pretrain] step 9500 | loss: 0.0143
+critic pretrain => warm start
+[SAC&RND CRITIC pretrain] critic loss : 661.1602783203125
+여러 주행 데이터로 mcnet 학습
+data filling start
+mcnet 학습중
+[MCNet] Epoch 1/10 | Loss: 17590.6211

@@ -10,6 +10,7 @@ from stable_baselines3 import SAC
 from stable_baselines3.common.type_aliases import ReplayBufferSamples
 from stable_baselines3.common.utils import polyak_update 
 import torch.nn as nn
+import pickle
 
 class MCNet(nn.Module):
     def __init__(self, input_dim: int, hidden_dims=[256, 256]):
@@ -62,7 +63,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self.rnd = None # rnd 모듈 정의 
         self.rnd_update_every = 5
         self.rnd_update_steps = 1
-     
+        self.device = th.device("cuda" if th.cuda.is_available() else "cpu")
+        print(self.device)
         # 몬테 카를로 return 캐시를 위한 변수 
         self._mc_cached_size: int = -1  # 유효 버퍼 길이 [의문]
         self._mc_cached_pos  = -1
@@ -99,11 +101,22 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
     
     # SACOfflineOnline 클래스에 메서드 추가
-    def _normalize_tensor(self, x: th.Tensor, mean: np.ndarray, var: np.ndarray) -> th.Tensor:
+    def _normalize_tensor(self, x: np.ndarray, mean: np.ndarray, var: np.ndarray) -> th.Tensor:
         eps = 1e-8
-        mean_t = th.tensor(mean, device=x.device, dtype=x.dtype)
-        std_t = th.sqrt(th.tensor(var, device=x.device, dtype=x.dtype) + eps)
-        return (x - mean_t) / std_t
+
+        def to_tensor_safe(val):
+            if isinstance(val, th.Tensor):
+                return val.clone().detach().to(dtype=th.float32, device=self.device)
+            else:
+                return th.tensor(val, dtype=th.float32, device=self.device)
+
+        x_t    = to_tensor_safe(x)
+        mean_t = to_tensor_safe(mean)
+        var_t  = to_tensor_safe(var)
+        std_t  = th.sqrt(var_t + eps)
+
+        return (x_t - mean_t) / std_t
+
 
     def attach_rnd(self, rnd) -> None: # 외부 RND 네트워크를 연결 
         self.rnd = rnd
@@ -153,17 +166,17 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             n_added += N
             n_files += 1
 
-        mc_returns = self.compute_mc_returns(
-            gamma=self.gamma,
-            rewards=rews.flatten(),
-            dones=dones.flatten()
-        )
-        self.mc_targets.extend(mc_returns.tolist())
+        # mc_returns = self.compute_mc_returns(
+        #     gamma=self.gamma,
+        #     rewards=rews.flatten(),
+        #     dones=dones.flatten()
+        # )
+        # self.mc_targets.extend(mc_returns.tolist())
         return n_added
 
     # 다양한 경로에 해당하는 오프라인 파일만 버퍼에 집어넣기 
     def prefill_from_npz_folder_mclearn(self, data_dir: str, clip_actions: bool = True) -> int: 
-   
+        self.mc_targets = [] 
         files = sorted(glob.glob(os.path.join(data_dir, "*.npz")))
         if not files:
             raise FileNotFoundError(f"No .npz files in {data_dir}")
@@ -172,7 +185,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         act_high = getattr(self.action_space, "high", None)
 
         n_added, n_files = 0, 0
-
+        all_rews = []
+        all_dones = []
         for path in files:
             with np.load(path, allow_pickle=False) as d:
                 obs = d["observations"].astype(np.float32)
@@ -198,6 +212,10 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                     np.array([bool(d)], np.float32),      # (1,)
                     [{"TimeLimit.truncated": False}],     # info list 길이 = n_envs(=1)
                 )
+                
+                
+                all_rews.append(float(r))
+                all_dones.append(bool(d))
                 self.obs_rms.update(th.tensor(o).unsqueeze(0))  # shape (1, obs_dim)
                 self.act_rms.update(th.tensor(a).unsqueeze(0))  # shape (1, act_dim)
             n_added += N
@@ -205,10 +223,10 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
         mc_returns = self.compute_mc_returns(
             gamma=self.gamma,
-            rewards=rews.flatten(),
-            dones=dones.flatten()
+            rewards=np.array(all_rews),
+            dones=np.array(all_dones)
         )
-        self.mc_targets.extend(mc_returns.tolist())
+        self.mc_targets = mc_returns.tolist()
         return n_added
 
     # 리플레이 버퍼 안에 있는 값들 중 observations 만 가져와서 학습함 
@@ -231,19 +249,28 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
     def train_mcnet_from_buffer(self, epochs=5, batch_size=128):
         self.mcnet.train()
         dataset_size = len(self.mc_targets)
-        assert dataset_size == len(self.replay_buffer.observations), "mc_targets size mismatch"
+        # print(f"dataset size : {dataset_size}")
+        buffer_len = self.replay_buffer.pos if not self.replay_buffer.full else self.replay_buffer.buffer_size
+        # print(f"buffer len : {buffer_len}")
+        assert dataset_size == buffer_len, f"mc_targets size mismatch ({dataset_size} vs {buffer_len})"
 
         for epoch in range(epochs):
             perm = np.random.permutation(dataset_size)
             for i in range(0, dataset_size, batch_size):
                 idxs = perm[i:i + batch_size]
-                obs = self.replay_buffer.observations[idxs]
-                act = self.replay_buffer.actions[idxs]
-                target = th.tensor(np.array(self.mc_targets)[idxs], dtype=th.float32).unsqueeze(-1).to(self.device)
+                obs = self.replay_buffer.observations[idxs].squeeze(1)
+                act = self.replay_buffer.actions[idxs].squeeze(1)
 
+                target = th.tensor(np.array(self.mc_targets)[idxs], dtype=th.float32).unsqueeze(-1).to(self.device)
+                # print("obs.shape:", obs.shape)
+                # print("act.shape:", act.shape)
+                # print("target.shape:", target.shape)
                 obs_n = self._normalize_tensor(obs, self.obs_rms.mean, self.obs_rms.var)
                 act_n = self._normalize_tensor(act, self.act_rms.mean, self.act_rms.var)
                 x = th.cat([obs_n, act_n], dim=1)
+                # print("obs.shape:", obs.shape)
+                # print("act.shape:", act.shape)
+                # print("target.shape:", target.shape)
 
                 pred = self.mcnet(x)
                 loss = F.mse_loss(pred, target)
@@ -253,6 +280,28 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 self.mcnet.optimizer.step()
 
             print(f"[MCNet] Epoch {epoch+1}/{epochs} | Loss: {loss.item():.4f}")
+            
+            
+    def save_mcnet_pth(self, path="mcnet_pretrained.pth"):
+        th.save({
+            'model_state_dict': self.mcnet.state_dict(),
+            'optimizer_state_dict': self.mcnet.optimizer.state_dict()
+        }, path)
+        print(f"[MCNet] Saved as PyTorch .pth at {path}")
+        
+
+    def save_mcnet_pickle(self, path="mcnet_pretrained.pkl"):
+        with open(path, 'wb') as f:
+            pickle.dump(self.mcnet, f)
+        print(f"[MCNet] Saved as Pickle .pkl at {path}")
+        
+            
+    def load_mcnet(self, path: str):
+        checkpoint = th.load(path, map_location=self.device)
+        self.mcnet.load_state_dict(checkpoint['model_state_dict'])
+        self.mcnet.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        print(f"[MCNet] Loaded from {path}")
+
 
     # 정책이 뽑은 행동 & 로그 확률 뽑기 
     @th.no_grad()
@@ -438,7 +487,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             g_pi_n = (g_pi - g_pi.mean()) / (g_pi.std() + 1e-6)
             calibrated_q = (1 - w) * min_q_pi_n + w * g_pi_n
 
-            if global_update % 50 == 0:
+            if global_update % 500 == 0:
                 print(f"[Update {global_update}]")
                 print("w:", self.tstats(w, "w"))
                 print("q_pi:", self.tstats(min_q_pi, "q_pi"))
