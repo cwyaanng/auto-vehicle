@@ -19,9 +19,10 @@ class MCNet(nn.Module):
         dims = [input_dim] + hidden_dims
         for i in range(len(dims) - 1):
             layers += [nn.Linear(dims[i], dims[i+1]), nn.ReLU()]
+        
         layers.append(nn.Linear(dims[-1], 1))  # output: MC return
         self.model = nn.Sequential(*layers)
-        self.optimizer = th.optim.Adam(self.parameters(), lr=3e-4)
+        self.optimizer = th.optim.Adam(self.parameters(), lr=4e-4)
 
     def forward(self, x):
         return self.model(x)
@@ -35,7 +36,7 @@ class RunningMeanStd:
     def update(self, x: th.Tensor):
         # x: (B,1)
         batch_mean = x.mean().item()
-        batch_var  = x.var(unbiased=False).item()
+        batch_var = np.var(x, ddof=0)
         batch_count = x.shape[0]
         delta = batch_mean - self.mean
         tot_count = self.count + batch_count
@@ -72,6 +73,10 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
+        checkpoint = th.load("mcnet/mcnet_pretrained.pth")
+        self.mcnet.load_state_dict(checkpoint["model_state_dict"])
+        self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+
         
         self.obs_rms = RunningMeanStd()
         self.act_rms = RunningMeanStd()
@@ -246,7 +251,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         return loss.detach()
 
 
-    def train_mcnet_from_buffer(self, epochs=5, batch_size=128):
+    def train_mcnet_from_buffer(self, epochs=5, batch_size=512):
         self.mcnet.train()
         dataset_size = len(self.mc_targets)
         # print(f"dataset size : {dataset_size}")

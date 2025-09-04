@@ -23,7 +23,7 @@ def make_env(batch_size):
     # carla 연결 
     client, world, carla_map = connect_to_carla()
     # 주행 시작 포인트 
-    start_point = (-98, 20)
+    start_point = (-98, 30)
     
     # 강화학습 환경 생성 
     env = CarlaWrapperEnv(
@@ -71,7 +71,7 @@ def main(batch_size):
     trainer.replay_buffer.reset()
     print("mcnet 모델 저장")
     trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
-    trainer.save_mcnet_pickel(f"mcnet/mcnet_pretrained.pkl")
+    trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")
     
     trainer.save(f"pretrained_actor_critic_1M.zip")
     trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
