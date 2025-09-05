@@ -8,3 +8,5 @@ logs/
 dataset_1/
 models/
 plots/
+pretrained_actor_critic_1M.zip
+mcnet/

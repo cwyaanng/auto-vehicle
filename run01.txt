@@ -10,3 +10,142 @@ cuda
 critic pretrain => warm start
 여러 주행 데이터로 mcnet 학습
 data filling start
+mcnet 학습중
+mcnet 모델 저장
+[MCNet] Saved as PyTorch .pth at mcnet/mcnet_pretrained.pth
+[MCNet] Saved as Pickle .pkl at mcnet/mcnet_pretrained.pkl
+Logging to logs/SAC_RND_TESTING_CRITIC/logs/SAC_RND_TESTING_CRITIC/_1
+[Update 0]
+w: w | shape: [256, 1] | mean: 0.5000 | std: 0.0000 | min: 0.5000 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: 0.5494 | std: 0.0129 | min: 0.5233 | max: 0.5802
+mc_q: mc_q | shape: [256, 1] | mean: 1169.7911 | std: 0.0001 | min: 1169.7913 | max: 1169.7913
+logp: logp | shape: [256, 1] | mean: -0.5377 | std: 2.0681 | min: -4.6279 | max: 5.3554
+alpha: 1.0
+--------------------------------------------------
+[onl] up 0 | crit:5.3863 | actor:-0.5377
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060231/actual_vs_planned_20250905_060231.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060240/actual_vs_planned_20250905_060240.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060245/actual_vs_planned_20250905_060245.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060251/actual_vs_planned_20250905_060251.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060256/actual_vs_planned_20250905_060256.png
+[onl] up 1000 | crit:81.0186 | actor:-1.5310
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060301/actual_vs_planned_20250905_060301.png
+충돌 발생 - 충돌 대상: static.building
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060306/actual_vs_planned_20250905_060306.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060312/actual_vs_planned_20250905_060312.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060319/actual_vs_planned_20250905_060319.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060326/actual_vs_planned_20250905_060326.png
+[onl] up 2000 | crit:17.3608 | actor:-1.1394
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060335/actual_vs_planned_20250905_060335.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060343/actual_vs_planned_20250905_060343.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060350/actual_vs_planned_20250905_060350.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060358/actual_vs_planned_20250905_060358.png
+[onl] up 3000 | crit:24.7381 | actor:-0.8628
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060405/actual_vs_planned_20250905_060405.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060412/actual_vs_planned_20250905_060412.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060417/actual_vs_planned_20250905_060417.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060429/actual_vs_planned_20250905_060429.png
+충돌 발생 - 충돌 대상: static.pole
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060436/actual_vs_planned_20250905_060436.png
+[onl] up 4000 | crit:13.2146 | actor:-0.7024
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060440/actual_vs_planned_20250905_060440.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060453/actual_vs_planned_20250905_060453.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060500/actual_vs_planned_20250905_060500.png
+[Update 5000]
+w: w | shape: [256, 1] | mean: 0.4142 | std: 0.0975 | min: 0.2657 | max: 0.8531
+q_pi: q_pi | shape: [256, 1] | mean: -4.7020 | std: 103.6029 | min: -467.9156 | max: 97.6729
+mc_q: mc_q | shape: [256, 1] | mean: 934.8940 | std: 295.2672 | min: 383.6427 | max: 2860.2935
+logp: logp | shape: [256, 1] | mean: -2.0336 | std: 0.2140 | min: -2.9773 | max: -1.4885
+alpha: 0.2227625548839569
+--------------------------------------------------
+[onl] up 5000 | crit:22.5309 | actor:-0.5109
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060509/actual_vs_planned_20250905_060509.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060516/actual_vs_planned_20250905_060516.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060522/actual_vs_planned_20250905_060522.png
+[onl] up 6000 | crit:35.3936 | actor:-0.4164
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060529/actual_vs_planned_20250905_060529.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060551/actual_vs_planned_20250905_060551.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060558/actual_vs_planned_20250905_060558.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060605/actual_vs_planned_20250905_060605.png
+[onl] up 7000 | crit:21.8203 | actor:-0.2757
+충돌 발생 - 충돌 대상: static.pole
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060613/actual_vs_planned_20250905_060613.png
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060618/actual_vs_planned_20250905_060618.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060631/actual_vs_planned_20250905_060631.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060637/actual_vs_planned_20250905_060637.png
+[onl] up 8000 | crit:23.3847 | actor:-0.2527
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060642/actual_vs_planned_20250905_060642.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060649/actual_vs_planned_20250905_060649.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060656/actual_vs_planned_20250905_060656.png
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060706/actual_vs_planned_20250905_060706.png
+[onl] up 9000 | crit:46.1365 | actor:-0.2007
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060717/actual_vs_planned_20250905_060717.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060724/actual_vs_planned_20250905_060724.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060729/actual_vs_planned_20250905_060729.png
+충돌 발생 - 충돌 대상: static.unknown
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060735/actual_vs_planned_20250905_060735.png
+[Update 10000]
+w: w | shape: [256, 1] | mean: 0.4283 | std: 0.1093 | min: 0.2778 | max: 0.9500
+q_pi: q_pi | shape: [256, 1] | mean: -31.6779 | std: 135.9142 | min: -459.1358 | max: 144.0887
+mc_q: mc_q | shape: [256, 1] | mean: 960.8152 | std: 296.2033 | min: 439.4820 | max: 2235.2737
+logp: logp | shape: [256, 1] | mean: -2.0382 | std: 0.1655 | min: -2.5815 | max: -1.5829
+alpha: 0.049692824482917786
+--------------------------------------------------
+[onl] up 10000 | crit:47.8557 | actor:-0.0969
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060742/actual_vs_planned_20250905_060742.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060754/actual_vs_planned_20250905_060754.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060802/actual_vs_planned_20250905_060802.png
+충돌 발생 - 충돌 대상: static.unknown
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/logs/SAC_RND_TESTING_CRITIC/2025-09-05 05:56:25.835584/_20250905_060809/actual_vs_planned_20250905_060809.png
+[onl] up 11000 | crit:132.8122 | actor:-0.0915
