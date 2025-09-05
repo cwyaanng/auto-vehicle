@@ -35,9 +35,17 @@ class RunningMeanStd:
         self.count = eps
     def update(self, x: th.Tensor):
         # x: (B,1)
-        batch_mean = x.mean().item()
-        batch_var = np.var(x, ddof=0)
-        batch_count = x.shape[0]
+        
+        if isinstance(x, th.Tensor):
+            x_np = x.detach().cpu().numpy()
+        elif isinstance(x, np.ndarray):
+            x_np = x
+        else:
+            raise TypeError(f"Expected torch.Tensor or numpy.ndarray, got {type(x)}")
+        
+        batch_mean = x_np.mean()
+        batch_var = x_np.var(ddof=0)
+        batch_count = x_np.shape[0]
         delta = batch_mean - self.mean
         tot_count = self.count + batch_count
         new_mean = self.mean + delta * batch_count / tot_count
@@ -307,6 +315,65 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self.mcnet.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         print(f"[MCNet] Loaded from {path}")
 
+    def tstats(self, tensor: th.Tensor, name: str = "") -> str:
+        """
+        텐서의 요약 통계를 문자열로 반환.
+        Args:
+            tensor (th.Tensor): 통계를 출력할 텐서
+            name (str): 변수 이름(옵션)
+        Returns:
+            str: 정리된 통계 문자열
+        """
+        if not isinstance(tensor, th.Tensor):
+            return f"{name}: Not a tensor"
+
+        tensor = tensor.detach().cpu()
+        stats = {
+            "mean": tensor.mean().item(),
+            "std": tensor.std().item(),
+            "min": tensor.min().item(),
+            "max": tensor.max().item(),
+            "shape": list(tensor.shape)
+        }
+
+        return (
+            f"{name} | shape: {stats['shape']} | "
+            f"mean: {stats['mean']:.4f} | std: {stats['std']:.4f} | "
+            f"min: {stats['min']:.4f} | max: {stats['max']:.4f}"
+        )
+
+    def _nan_report(self, step: int, phase: str = "train", **tensors):
+        """
+        텐서들 중 NaN이 있는지 탐지하고 있으면 관련 정보를 출력.
+
+        Args:
+            step (int): 현재 스텝 수
+            phase (str): 학습 단계 이름 (예: "train", "online", "pretrain" 등)
+            tensors (dict): 검사할 텐서들 (키=이름, 값=텐서)
+        """
+        for name, tensor in tensors.items():
+            if not isinstance(tensor, th.Tensor):
+                continue
+            if th.isnan(tensor).any() or th.isinf(tensor).any():
+                print(f"[⚠️ NaN DETECTED] step {step} | phase: {phase} | tensor: '{name}'")
+                print(f"→ Shape: {tuple(tensor.shape)}")
+                print(f"→ Values (sample): {tensor.flatten()[:5].tolist()}")
+                print(f"→ Stats: mean={tensor.float().mean().item():.4f}, std={tensor.float().std().item():.4f}")
+                # Optional: raise error to halt training
+                raise ValueError(f"NaN detected in tensor '{name}' during {phase} at step {step}.")
+
+    
+    def _tick_log(self, step: int, interval: int, message: str):
+        """
+        주어진 step이 interval의 배수일 때만 message를 출력하는 헬퍼 함수.
+        
+        Args:
+            step (int): 현재 step 또는 업데이트 수
+            interval (int): 로그 출력 간격
+            message (str): 출력할 메시지
+        """
+        if step % interval == 0:
+            print(message)
 
     # 정책이 뽑은 행동 & 로그 확률 뽑기 
     @th.no_grad()
@@ -492,7 +559,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             g_pi_n = (g_pi - g_pi.mean()) / (g_pi.std() + 1e-6)
             calibrated_q = (1 - w) * min_q_pi_n + w * g_pi_n
 
-            if global_update % 500 == 0:
+            if global_update % 5000 == 0:
                 print(f"[Update {global_update}]")
                 print("w:", self.tstats(w, "w"))
                 print("q_pi:", self.tstats(min_q_pi, "q_pi"))

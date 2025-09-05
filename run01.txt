@@ -1,1 +1,12 @@
 nohup: ignoring input
+/home/jingjingee198/miniconda/envs/carla/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+[forward] steps 완료: traveled=1966.5 m, steps=1000
+[forward] 경로 생성: 1001 wp, 총 거리 1966.5 m
+Using cuda device
+cuda
+직선 데이터 버퍼에 저장
+직선 주행 데이터 actor behavioral cloning
+critic pretrain => warm start
+여러 주행 데이터로 mcnet 학습
+data filling start

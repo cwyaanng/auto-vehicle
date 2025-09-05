@@ -24,12 +24,10 @@ class CarlaWrapperEnv(gym.Env):
         self.collision_sensor = None
         self.collision_event = {"collided": False}
         
-        self.timestamp =  datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.log="logs_"+self.timestamp
-        self.writer = SummaryWriter(log_dir=self.log+"/tensorboard_log")
+        self.writer = SummaryWriter(log_dir=simulation)
         self.speed_stop_threshold = 1
         self.stop_count = 0
-        self.camera_save_root = self.log+"/driving_scene" 
+        self.camera_save_root = simulation+"/driving_scene" 
         
         self.observation_space = spaces.Box(
             low=np.array([-100.0,-100.0]*15 + [-np.pi, -10.0]),
