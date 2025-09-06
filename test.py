@@ -192,7 +192,7 @@ def main():
     plt.hist(nov_circle_route, bins=bins, alpha=0.6, label="Circle route (route_7)")
 
     plt.xscale("log")
-    plt.yscale("log")   # y축도 로그!
+    plt.yscale("log")   
     plt.xlim(1e-8, 1e5)
     plt.xlabel("Novelty")
     plt.ylabel("Count (log scale)")

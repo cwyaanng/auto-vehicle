@@ -58,8 +58,8 @@ def generate_actual_path_plot(route_waypoints, actual_path_x, actual_path_y, sim
     plt.yticks(fontsize=30)
     plt.axis('equal')
 
-    os.makedirs(f"logs/route_visualization/{simulation_category}/_{timestamp}", exist_ok=True)
-    save_path = f"logs/route_visualization/{simulation_category}/_{timestamp}/actual_vs_planned_{timestamp}.png"
+    os.makedirs(f"{simulation_category}/route_visualization/_{timestamp}", exist_ok=True)
+    save_path = f"{simulation_category}/route_visualization/_{timestamp}/actual_vs_planned_{timestamp}.png"
     plt.savefig(save_path, dpi=300)
     plt.close()
     print(f"실제 주행 경로가 시각화되어 저장됨: {save_path}")
