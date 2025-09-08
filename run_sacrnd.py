@@ -57,10 +57,10 @@ def main(batch_size):
     print("직선 데이터 버퍼에 저장")
     trainer.prefill_from_npz_folder(DATA_DIR)
     print("직선 주행 데이터 actor behavioral cloning")
-    trainer.pretrain_actor(10000)
+    trainer.pretrain_actor(20000)
     print("critic pretrain => warm start")
     trainer.attach_rnd(rnd)
-    trainer.pretrain_critic(steps=10000)
+    trainer.pretrain_critic(steps=20000)
     
     print("여러 주행 데이터로 mcnet 학습")  
     trainer.replay_buffer.reset()
@@ -73,8 +73,10 @@ def main(batch_size):
     trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
     trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")
     
+    print("직선 주행 데이터만 넣음")
+    trainer.prefill_from_npz_folder(DATA_DIR)
     trainer.save(f"pretrained_actor_critic_1M.zip")
-    trainer.online_learn(log_interval=50, total_timesteps=2_500_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
+    trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
 
     trainer.save(f"trained_1M_1M.zip")
     env.close()

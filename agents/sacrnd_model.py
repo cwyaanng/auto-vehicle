@@ -17,12 +17,13 @@ class MCNet(nn.Module):
         super().__init__()
         layers = []
         dims = [input_dim] + hidden_dims
+        print(f"dims:{dims}")
         for i in range(len(dims) - 1):
             layers += [nn.Linear(dims[i], dims[i+1]), nn.ReLU()]
         
         layers.append(nn.Linear(dims[-1], 1))  # output: MC return
         self.model = nn.Sequential(*layers)
-        self.optimizer = th.optim.Adam(self.parameters(), lr=4e-4)
+        self.optimizer = th.optim.Adam(self.parameters(), lr=3e-4)
 
     def forward(self, x):
         return self.model(x)
@@ -78,12 +79,12 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self._mc_cached_size: int = -1  # 유효 버퍼 길이 [의문]
         self._mc_cached_pos  = -1
         self._mc_cached_full = False
-
+        self.ent_coef = 0.1
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
-        checkpoint = th.load("mcnet/mcnet_pretrained.pth")
-        self.mcnet.load_state_dict(checkpoint["model_state_dict"])
-        self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        # checkpoint = th.load("mcnet/mcnet_pretrained.pth")
+        # self.mcnet.load_state_dict(checkpoint["model_state_dict"])
+        # self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
         
         self.obs_rms = RunningMeanStd()
@@ -521,7 +522,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 rnd_norm = nov_z.sigmoid()
 
                 # 수정: 안정성 위해 clamp 방식 사용
-                w = rnd_norm.clamp(0.05, 0.95)  
+                w = rnd_norm.clamp(0.05, 0.5)  
                 if nov_z.std() < 1e-4:
                     w = w * 0 + 0.5
                 
@@ -566,6 +567,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 print("mc_q:", self.tstats(g_pi, "mc_q"))
                 print("logp:", self.tstats(log_prob, "logp"))
                 print("alpha:", float(ent_coef.detach().cpu().numpy()))
+                print("cal_q:", self.tstats(calibrated_q, "calibrated_q"))
                 print("-" * 50)
 
             actor_loss = (ent_coef * log_prob - calibrated_q).mean()
