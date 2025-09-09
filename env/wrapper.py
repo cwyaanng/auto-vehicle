@@ -157,6 +157,9 @@ class CarlaWrapperEnv(gym.Env):
         if self.count_step > 20000:
             done = True
         
+        # reward 스케일링 
+        reward = reward / 100.0
+        
         info["metrics"] = {
             "reward/step": float(reward),
             "vehicle/speed_mps": float(speed),

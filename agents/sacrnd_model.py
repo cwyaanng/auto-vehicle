@@ -79,23 +79,19 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self._mc_cached_size: int = -1  # 유효 버퍼 길이 [의문]
         self._mc_cached_pos  = -1
         self._mc_cached_full = False
-        self.ent_coef = 0.1
+        self.ent_coef = 0.5
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
-        # checkpoint = th.load("mcnet/mcnet_pretrained.pth")
-        # self.mcnet.load_state_dict(checkpoint["model_state_dict"])
-        # self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        checkpoint = th.load("mcnet/mcnet_pretrained.pth")
+        self.mcnet.load_state_dict(checkpoint["model_state_dict"])
+        self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
         
         self.obs_rms = RunningMeanStd()
         self.act_rms = RunningMeanStd()
 
 
-        
-        self.ent_coef = 0.1
-        self.ent_coef_tensor = th.tensor(self.ent_coef, device=self.device)
-        self.ent_coef_optimizer = None
-        self.log_ent_coef = None
+   
 
 
     def _alpha(self) -> th.Tensor: # 현재 엔트로피 계수 얻기 
