@@ -92,6 +92,11 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
 
         
+        self.ent_coef = 0.1
+        self.ent_coef_tensor = th.tensor(self.ent_coef, device=self.device)
+        self.ent_coef_optimizer = None
+        self.log_ent_coef = None
+
 
     def _alpha(self) -> th.Tensor: # 현재 엔트로피 계수 얻기 
         if self.ent_coef_optimizer is not None:
@@ -210,6 +215,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 dones = d["terminals"].astype(np.float32).reshape(-1, 1)
 
             N = min(len(obs), len(acts), len(rews), len(nobs), len(dones))
+            rews = rews / 100.0
             if N == 0:
                 continue
             obs, acts, rews, nobs, dones = obs[:N], acts[:N], rews[:N], nobs[:N], dones[:N]
