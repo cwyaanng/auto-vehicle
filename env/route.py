@@ -130,6 +130,13 @@ def generate_route(carla_map, start_coords, end_coords, max_dist=1000, wp_separa
         
         print(f"CAR SPAWN : ({spawn_transform.location.x:.1f}, {spawn_transform.location.y:.1f}, {yaw:.1f}°)")
         
+        # route_waypoints 생성 후
+        if len(route_waypoints) > 100:
+            route_waypoints = route_waypoints[100:]
+            print(f"경로를 100번째 웨이포인트부터 잘라서 {len(route_waypoints)}개 남음")
+        else:
+            print("웨이포인트 개수가 100개 미만이라 잘라낼 수 없음")
+        
         return route_waypoints
 
     return route_waypoints
@@ -216,8 +223,17 @@ def generate_forward_route(
 
     if verbose:
         print(f"[forward] 경로 생성: {len(route)} wp, 총 거리 {traveled:.1f} m")
+        
+    if len(route) > 70:
+        route = route[70:]
+        if verbose:
+            print(f"[forward] 처음 {60}개 웨이포인트를 버림 -> {len(route)} wp 남음")
+    else:
+        if verbose:
+            print(f"[forward] 웨이포인트 수가 {60}개 이하라서 자르지 않음")
 
     return route
+  
 
 
 

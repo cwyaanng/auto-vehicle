@@ -1,0 +1,2995 @@
+nohup: ignoring input
+[forward] steps 완료: traveled=1998.2 m, steps=1000
+[forward] 경로 생성: 1001 wp, 총 거리 1998.2 m
+Using cuda device
+data filling end
+pretraining mcnet end
+attaching rnd end
+pretraining critic end
+fine-tuning start
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161142/actual_vs_planned_20250827_161142.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161158/actual_vs_planned_20250827_161158.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161214/actual_vs_planned_20250827_161214.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161230/actual_vs_planned_20250827_161230.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161507/actual_vs_planned_20250827_161507.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_161744/actual_vs_planned_20250827_161744.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_162021/actual_vs_planned_20250827_162021.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_162258/actual_vs_planned_20250827_162258.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_162536/actual_vs_planned_20250827_162536.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_162813/actual_vs_planned_20250827_162813.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_163050/actual_vs_planned_20250827_163050.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_163327/actual_vs_planned_20250827_163327.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_163604/actual_vs_planned_20250827_163604.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_163842/actual_vs_planned_20250827_163842.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_164120/actual_vs_planned_20250827_164120.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_164357/actual_vs_planned_20250827_164357.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_164634/actual_vs_planned_20250827_164634.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_164912/actual_vs_planned_20250827_164912.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_165150/actual_vs_planned_20250827_165150.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_165427/actual_vs_planned_20250827_165427.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_165704/actual_vs_planned_20250827_165704.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_165942/actual_vs_planned_20250827_165942.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_170219/actual_vs_planned_20250827_170219.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_170457/actual_vs_planned_20250827_170457.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_170734/actual_vs_planned_20250827_170734.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_171012/actual_vs_planned_20250827_171012.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_171250/actual_vs_planned_20250827_171250.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_171527/actual_vs_planned_20250827_171527.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_171805/actual_vs_planned_20250827_171805.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_172042/actual_vs_planned_20250827_172042.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_172320/actual_vs_planned_20250827_172320.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_172557/actual_vs_planned_20250827_172557.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_172836/actual_vs_planned_20250827_172836.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_173114/actual_vs_planned_20250827_173114.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_173352/actual_vs_planned_20250827_173352.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_173630/actual_vs_planned_20250827_173630.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_173907/actual_vs_planned_20250827_173907.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_174145/actual_vs_planned_20250827_174145.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_174422/actual_vs_planned_20250827_174422.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_174700/actual_vs_planned_20250827_174700.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_174938/actual_vs_planned_20250827_174938.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_175216/actual_vs_planned_20250827_175216.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_175453/actual_vs_planned_20250827_175453.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_175730/actual_vs_planned_20250827_175730.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_180007/actual_vs_planned_20250827_180007.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_180245/actual_vs_planned_20250827_180245.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_180523/actual_vs_planned_20250827_180523.png
+episode done
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_180801/actual_vs_planned_20250827_180801.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181038/actual_vs_planned_20250827_181038.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181149/actual_vs_planned_20250827_181149.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 1.86e+04  |
+|    ep_rew_mean     | -7.48e+04 |
+| time/              |           |
+|    episodes        | 50        |
+|    fps             | 126       |
+|    time_elapsed    | 7329      |
+|    total_timesteps | 930555    |
+| train/             |           |
+|    actor_loss      | -6.76e+06 |
+|    critic_loss     | 2.69e+10  |
+|    ent_coef        | 1.21e-09  |
+|    ent_coef_loss   | 1.64e+03  |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 930554    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181351/actual_vs_planned_20250827_181351.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181356/actual_vs_planned_20250827_181356.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181404/actual_vs_planned_20250827_181404.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181408/actual_vs_planned_20250827_181408.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181414/actual_vs_planned_20250827_181414.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181419/actual_vs_planned_20250827_181419.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181423/actual_vs_planned_20250827_181423.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181427/actual_vs_planned_20250827_181427.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181431/actual_vs_planned_20250827_181431.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181434/actual_vs_planned_20250827_181434.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181439/actual_vs_planned_20250827_181439.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181442/actual_vs_planned_20250827_181442.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181447/actual_vs_planned_20250827_181447.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181451/actual_vs_planned_20250827_181451.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181456/actual_vs_planned_20250827_181456.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181458/actual_vs_planned_20250827_181458.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181502/actual_vs_planned_20250827_181502.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181504/actual_vs_planned_20250827_181504.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181506/actual_vs_planned_20250827_181506.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181508/actual_vs_planned_20250827_181508.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181512/actual_vs_planned_20250827_181512.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181514/actual_vs_planned_20250827_181514.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181517/actual_vs_planned_20250827_181517.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181519/actual_vs_planned_20250827_181519.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181521/actual_vs_planned_20250827_181521.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181523/actual_vs_planned_20250827_181523.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181526/actual_vs_planned_20250827_181526.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181529/actual_vs_planned_20250827_181529.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181531/actual_vs_planned_20250827_181531.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181534/actual_vs_planned_20250827_181534.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181536/actual_vs_planned_20250827_181536.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181538/actual_vs_planned_20250827_181538.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181540/actual_vs_planned_20250827_181540.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181544/actual_vs_planned_20250827_181544.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181545/actual_vs_planned_20250827_181545.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181546/actual_vs_planned_20250827_181546.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181547/actual_vs_planned_20250827_181547.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181548/actual_vs_planned_20250827_181548.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181549/actual_vs_planned_20250827_181549.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181550/actual_vs_planned_20250827_181550.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181551/actual_vs_planned_20250827_181551.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181552/actual_vs_planned_20250827_181552.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181553/actual_vs_planned_20250827_181553.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181554/actual_vs_planned_20250827_181554.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181555/actual_vs_planned_20250827_181555.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181556/actual_vs_planned_20250827_181556.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181557/actual_vs_planned_20250827_181557.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181558/actual_vs_planned_20250827_181558.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181559/actual_vs_planned_20250827_181559.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181600/actual_vs_planned_20250827_181600.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 9.45e+03  |
+|    ep_rew_mean     | -3.8e+04  |
+| time/              |           |
+|    episodes        | 100       |
+|    fps             | 126       |
+|    time_elapsed    | 7459      |
+|    total_timesteps | 944668    |
+| train/             |           |
+|    actor_loss      | -7.91e+06 |
+|    critic_loss     | 2.68e+10  |
+|    ent_coef        | 7.9e-08   |
+|    ent_coef_loss   | 1.09e+03  |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 944667    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181601/actual_vs_planned_20250827_181601.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181602/actual_vs_planned_20250827_181602.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181603/actual_vs_planned_20250827_181603.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181604/actual_vs_planned_20250827_181604.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181605/actual_vs_planned_20250827_181605.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181606/actual_vs_planned_20250827_181606.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181607/actual_vs_planned_20250827_181607.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181608/actual_vs_planned_20250827_181608.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181609/actual_vs_planned_20250827_181609.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181610/actual_vs_planned_20250827_181610.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181611/actual_vs_planned_20250827_181611.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181612/actual_vs_planned_20250827_181612.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181613/actual_vs_planned_20250827_181613.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181614/actual_vs_planned_20250827_181614.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181615/actual_vs_planned_20250827_181615.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181616/actual_vs_planned_20250827_181616.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181617/actual_vs_planned_20250827_181617.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181618/actual_vs_planned_20250827_181618.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181619/actual_vs_planned_20250827_181619.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181620/actual_vs_planned_20250827_181620.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181621/actual_vs_planned_20250827_181621.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181622/actual_vs_planned_20250827_181622.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181623/actual_vs_planned_20250827_181623.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181624/actual_vs_planned_20250827_181624.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181625/actual_vs_planned_20250827_181625.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181626/actual_vs_planned_20250827_181626.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181627/actual_vs_planned_20250827_181627.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181628/actual_vs_planned_20250827_181628.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181629/actual_vs_planned_20250827_181629.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181630/actual_vs_planned_20250827_181630.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181631/actual_vs_planned_20250827_181631.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181632/actual_vs_planned_20250827_181632.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181633/actual_vs_planned_20250827_181633.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181634/actual_vs_planned_20250827_181634.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181635/actual_vs_planned_20250827_181635.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181636/actual_vs_planned_20250827_181636.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181637/actual_vs_planned_20250827_181637.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181638/actual_vs_planned_20250827_181638.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181639/actual_vs_planned_20250827_181639.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181640/actual_vs_planned_20250827_181640.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181641/actual_vs_planned_20250827_181641.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181642/actual_vs_planned_20250827_181642.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181643/actual_vs_planned_20250827_181643.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181645/actual_vs_planned_20250827_181645.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181646/actual_vs_planned_20250827_181646.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181647/actual_vs_planned_20250827_181647.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181648/actual_vs_planned_20250827_181648.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181649/actual_vs_planned_20250827_181649.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181650/actual_vs_planned_20250827_181650.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181651/actual_vs_planned_20250827_181651.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 183       |
+|    ep_rew_mean     | -770      |
+| time/              |           |
+|    episodes        | 150       |
+|    fps             | 126       |
+|    time_elapsed    | 7510      |
+|    total_timesteps | 948837    |
+| train/             |           |
+|    actor_loss      | -8.27e+06 |
+|    critic_loss     | 1.41e+10  |
+|    ent_coef        | 2.77e-07  |
+|    ent_coef_loss   | 999       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 948836    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181652/actual_vs_planned_20250827_181652.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181653/actual_vs_planned_20250827_181653.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181654/actual_vs_planned_20250827_181654.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181656/actual_vs_planned_20250827_181656.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181657/actual_vs_planned_20250827_181657.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181658/actual_vs_planned_20250827_181658.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181659/actual_vs_planned_20250827_181659.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181700/actual_vs_planned_20250827_181700.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181701/actual_vs_planned_20250827_181701.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181702/actual_vs_planned_20250827_181702.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181703/actual_vs_planned_20250827_181703.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181705/actual_vs_planned_20250827_181705.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181706/actual_vs_planned_20250827_181706.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181707/actual_vs_planned_20250827_181707.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181708/actual_vs_planned_20250827_181708.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181709/actual_vs_planned_20250827_181709.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181710/actual_vs_planned_20250827_181710.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181711/actual_vs_planned_20250827_181711.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181713/actual_vs_planned_20250827_181713.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181714/actual_vs_planned_20250827_181714.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181715/actual_vs_planned_20250827_181715.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181716/actual_vs_planned_20250827_181716.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181717/actual_vs_planned_20250827_181717.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181718/actual_vs_planned_20250827_181718.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181719/actual_vs_planned_20250827_181719.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181720/actual_vs_planned_20250827_181720.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181721/actual_vs_planned_20250827_181721.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181722/actual_vs_planned_20250827_181722.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181724/actual_vs_planned_20250827_181724.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181725/actual_vs_planned_20250827_181725.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181726/actual_vs_planned_20250827_181726.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181727/actual_vs_planned_20250827_181727.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181728/actual_vs_planned_20250827_181728.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181729/actual_vs_planned_20250827_181729.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181730/actual_vs_planned_20250827_181730.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181731/actual_vs_planned_20250827_181731.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181732/actual_vs_planned_20250827_181732.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181733/actual_vs_planned_20250827_181733.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181735/actual_vs_planned_20250827_181735.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181736/actual_vs_planned_20250827_181736.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181737/actual_vs_planned_20250827_181737.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181738/actual_vs_planned_20250827_181738.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181739/actual_vs_planned_20250827_181739.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181740/actual_vs_planned_20250827_181740.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181741/actual_vs_planned_20250827_181741.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181742/actual_vs_planned_20250827_181742.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181743/actual_vs_planned_20250827_181743.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181744/actual_vs_planned_20250827_181744.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181746/actual_vs_planned_20250827_181746.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181747/actual_vs_planned_20250827_181747.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 88.9      |
+|    ep_rew_mean     | -410      |
+| time/              |           |
+|    episodes        | 200       |
+|    fps             | 126       |
+|    time_elapsed    | 7566      |
+|    total_timesteps | 953558    |
+| train/             |           |
+|    actor_loss      | -7.22e+06 |
+|    critic_loss     | 2.65e+10  |
+|    ent_coef        | 1.12e-06  |
+|    ent_coef_loss   | 746       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 953557    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181748/actual_vs_planned_20250827_181748.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181749/actual_vs_planned_20250827_181749.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181750/actual_vs_planned_20250827_181750.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181751/actual_vs_planned_20250827_181751.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181752/actual_vs_planned_20250827_181752.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181753/actual_vs_planned_20250827_181753.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181755/actual_vs_planned_20250827_181755.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181756/actual_vs_planned_20250827_181756.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181757/actual_vs_planned_20250827_181757.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181758/actual_vs_planned_20250827_181758.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181759/actual_vs_planned_20250827_181759.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181800/actual_vs_planned_20250827_181800.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181801/actual_vs_planned_20250827_181801.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181802/actual_vs_planned_20250827_181802.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181804/actual_vs_planned_20250827_181804.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181805/actual_vs_planned_20250827_181805.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181806/actual_vs_planned_20250827_181806.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181807/actual_vs_planned_20250827_181807.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181808/actual_vs_planned_20250827_181808.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181809/actual_vs_planned_20250827_181809.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181810/actual_vs_planned_20250827_181810.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181811/actual_vs_planned_20250827_181811.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181812/actual_vs_planned_20250827_181812.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181813/actual_vs_planned_20250827_181813.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181815/actual_vs_planned_20250827_181815.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181816/actual_vs_planned_20250827_181816.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181817/actual_vs_planned_20250827_181817.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181818/actual_vs_planned_20250827_181818.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181819/actual_vs_planned_20250827_181819.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181820/actual_vs_planned_20250827_181820.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181821/actual_vs_planned_20250827_181821.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181822/actual_vs_planned_20250827_181822.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181823/actual_vs_planned_20250827_181823.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181824/actual_vs_planned_20250827_181824.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181825/actual_vs_planned_20250827_181825.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181826/actual_vs_planned_20250827_181826.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181828/actual_vs_planned_20250827_181828.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181829/actual_vs_planned_20250827_181829.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181830/actual_vs_planned_20250827_181830.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181831/actual_vs_planned_20250827_181831.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181832/actual_vs_planned_20250827_181832.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181833/actual_vs_planned_20250827_181833.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181834/actual_vs_planned_20250827_181834.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181835/actual_vs_planned_20250827_181835.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181836/actual_vs_planned_20250827_181836.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181837/actual_vs_planned_20250827_181837.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181838/actual_vs_planned_20250827_181838.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181839/actual_vs_planned_20250827_181839.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181840/actual_vs_planned_20250827_181840.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181841/actual_vs_planned_20250827_181841.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 92.1      |
+|    ep_rew_mean     | -444      |
+| time/              |           |
+|    episodes        | 250       |
+|    fps             | 125       |
+|    time_elapsed    | 7619      |
+|    total_timesteps | 958051    |
+| train/             |           |
+|    actor_loss      | -6.47e+06 |
+|    critic_loss     | 6.17e+09  |
+|    ent_coef        | 3.88e-06  |
+|    ent_coef_loss   | 563       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 958050    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181842/actual_vs_planned_20250827_181842.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181843/actual_vs_planned_20250827_181843.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181844/actual_vs_planned_20250827_181844.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181845/actual_vs_planned_20250827_181845.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181846/actual_vs_planned_20250827_181846.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181847/actual_vs_planned_20250827_181847.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181848/actual_vs_planned_20250827_181848.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181849/actual_vs_planned_20250827_181849.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181850/actual_vs_planned_20250827_181850.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181851/actual_vs_planned_20250827_181851.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181852/actual_vs_planned_20250827_181852.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181853/actual_vs_planned_20250827_181853.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181854/actual_vs_planned_20250827_181854.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181855/actual_vs_planned_20250827_181855.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181856/actual_vs_planned_20250827_181856.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181857/actual_vs_planned_20250827_181857.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181858/actual_vs_planned_20250827_181858.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181859/actual_vs_planned_20250827_181859.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181900/actual_vs_planned_20250827_181900.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181901/actual_vs_planned_20250827_181901.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181902/actual_vs_planned_20250827_181902.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181903/actual_vs_planned_20250827_181903.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181904/actual_vs_planned_20250827_181904.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181905/actual_vs_planned_20250827_181905.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181906/actual_vs_planned_20250827_181906.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181907/actual_vs_planned_20250827_181907.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181908/actual_vs_planned_20250827_181908.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181909/actual_vs_planned_20250827_181909.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181910/actual_vs_planned_20250827_181910.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181911/actual_vs_planned_20250827_181911.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181912/actual_vs_planned_20250827_181912.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181913/actual_vs_planned_20250827_181913.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181914/actual_vs_planned_20250827_181914.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181915/actual_vs_planned_20250827_181915.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181916/actual_vs_planned_20250827_181916.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181917/actual_vs_planned_20250827_181917.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181918/actual_vs_planned_20250827_181918.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181919/actual_vs_planned_20250827_181919.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181920/actual_vs_planned_20250827_181920.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181921/actual_vs_planned_20250827_181921.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181922/actual_vs_planned_20250827_181922.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181923/actual_vs_planned_20250827_181923.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181923/actual_vs_planned_20250827_181923.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181924/actual_vs_planned_20250827_181924.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181925/actual_vs_planned_20250827_181925.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181926/actual_vs_planned_20250827_181926.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181927/actual_vs_planned_20250827_181927.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181928/actual_vs_planned_20250827_181928.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181929/actual_vs_planned_20250827_181929.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181930/actual_vs_planned_20250827_181930.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 85.1      |
+|    ep_rew_mean     | -359      |
+| time/              |           |
+|    episodes        | 300       |
+|    fps             | 125       |
+|    time_elapsed    | 7669      |
+|    total_timesteps | 962064    |
+| train/             |           |
+|    actor_loss      | -5.81e+06 |
+|    critic_loss     | 1.08e+10  |
+|    ent_coef        | 1.26e-05  |
+|    ent_coef_loss   | 442       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 962063    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181931/actual_vs_planned_20250827_181931.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181932/actual_vs_planned_20250827_181932.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181933/actual_vs_planned_20250827_181933.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181934/actual_vs_planned_20250827_181934.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181935/actual_vs_planned_20250827_181935.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181936/actual_vs_planned_20250827_181936.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181937/actual_vs_planned_20250827_181937.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181938/actual_vs_planned_20250827_181938.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181939/actual_vs_planned_20250827_181939.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181940/actual_vs_planned_20250827_181940.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181941/actual_vs_planned_20250827_181941.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181942/actual_vs_planned_20250827_181942.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181943/actual_vs_planned_20250827_181943.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181944/actual_vs_planned_20250827_181944.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181945/actual_vs_planned_20250827_181945.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181946/actual_vs_planned_20250827_181946.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181947/actual_vs_planned_20250827_181947.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181948/actual_vs_planned_20250827_181948.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181949/actual_vs_planned_20250827_181949.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181950/actual_vs_planned_20250827_181950.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181951/actual_vs_planned_20250827_181951.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181952/actual_vs_planned_20250827_181952.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181953/actual_vs_planned_20250827_181953.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181954/actual_vs_planned_20250827_181954.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181955/actual_vs_planned_20250827_181955.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181956/actual_vs_planned_20250827_181956.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181957/actual_vs_planned_20250827_181957.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181958/actual_vs_planned_20250827_181958.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_181959/actual_vs_planned_20250827_181959.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182000/actual_vs_planned_20250827_182000.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182001/actual_vs_planned_20250827_182001.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182002/actual_vs_planned_20250827_182002.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182003/actual_vs_planned_20250827_182003.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182004/actual_vs_planned_20250827_182004.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182005/actual_vs_planned_20250827_182005.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182006/actual_vs_planned_20250827_182006.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182007/actual_vs_planned_20250827_182007.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182008/actual_vs_planned_20250827_182008.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182009/actual_vs_planned_20250827_182009.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182010/actual_vs_planned_20250827_182010.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182011/actual_vs_planned_20250827_182011.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182012/actual_vs_planned_20250827_182012.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182013/actual_vs_planned_20250827_182013.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182014/actual_vs_planned_20250827_182014.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182015/actual_vs_planned_20250827_182015.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182016/actual_vs_planned_20250827_182016.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182017/actual_vs_planned_20250827_182017.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182018/actual_vs_planned_20250827_182018.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182019/actual_vs_planned_20250827_182019.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182020/actual_vs_planned_20250827_182020.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80.1      |
+|    ep_rew_mean     | -301      |
+| time/              |           |
+|    episodes        | 350       |
+|    fps             | 125       |
+|    time_elapsed    | 7719      |
+|    total_timesteps | 966065    |
+| train/             |           |
+|    actor_loss      | -4.54e+06 |
+|    critic_loss     | 4.22e+09  |
+|    ent_coef        | 4.11e-05  |
+|    ent_coef_loss   | 383       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 966064    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182021/actual_vs_planned_20250827_182021.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182022/actual_vs_planned_20250827_182022.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182023/actual_vs_planned_20250827_182023.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182024/actual_vs_planned_20250827_182024.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182025/actual_vs_planned_20250827_182025.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182026/actual_vs_planned_20250827_182026.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182027/actual_vs_planned_20250827_182027.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182028/actual_vs_planned_20250827_182028.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182029/actual_vs_planned_20250827_182029.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182030/actual_vs_planned_20250827_182030.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182031/actual_vs_planned_20250827_182031.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182032/actual_vs_planned_20250827_182032.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182033/actual_vs_planned_20250827_182033.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182034/actual_vs_planned_20250827_182034.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182035/actual_vs_planned_20250827_182035.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182036/actual_vs_planned_20250827_182036.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182037/actual_vs_planned_20250827_182037.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182038/actual_vs_planned_20250827_182038.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182039/actual_vs_planned_20250827_182039.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182040/actual_vs_planned_20250827_182040.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182041/actual_vs_planned_20250827_182041.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182042/actual_vs_planned_20250827_182042.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182043/actual_vs_planned_20250827_182043.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182044/actual_vs_planned_20250827_182044.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182045/actual_vs_planned_20250827_182045.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182046/actual_vs_planned_20250827_182046.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182047/actual_vs_planned_20250827_182047.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182048/actual_vs_planned_20250827_182048.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182049/actual_vs_planned_20250827_182049.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182050/actual_vs_planned_20250827_182050.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182051/actual_vs_planned_20250827_182051.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182052/actual_vs_planned_20250827_182052.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182053/actual_vs_planned_20250827_182053.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182054/actual_vs_planned_20250827_182054.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182055/actual_vs_planned_20250827_182055.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182056/actual_vs_planned_20250827_182056.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182057/actual_vs_planned_20250827_182057.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182058/actual_vs_planned_20250827_182058.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182059/actual_vs_planned_20250827_182059.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182100/actual_vs_planned_20250827_182100.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182101/actual_vs_planned_20250827_182101.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182102/actual_vs_planned_20250827_182102.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182103/actual_vs_planned_20250827_182103.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182104/actual_vs_planned_20250827_182104.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182105/actual_vs_planned_20250827_182105.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182106/actual_vs_planned_20250827_182106.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182107/actual_vs_planned_20250827_182107.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182108/actual_vs_planned_20250827_182108.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182109/actual_vs_planned_20250827_182109.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182110/actual_vs_planned_20250827_182110.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -297      |
+| time/              |           |
+|    episodes        | 400       |
+|    fps             | 124       |
+|    time_elapsed    | 7769      |
+|    total_timesteps | 970065    |
+| train/             |           |
+|    actor_loss      | -3.65e+06 |
+|    critic_loss     | 4.84e+09  |
+|    ent_coef        | 0.000135  |
+|    ent_coef_loss   | 332       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 970064    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182111/actual_vs_planned_20250827_182111.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182112/actual_vs_planned_20250827_182112.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182113/actual_vs_planned_20250827_182113.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182114/actual_vs_planned_20250827_182114.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182115/actual_vs_planned_20250827_182115.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182116/actual_vs_planned_20250827_182116.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182117/actual_vs_planned_20250827_182117.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182118/actual_vs_planned_20250827_182118.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182119/actual_vs_planned_20250827_182119.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182120/actual_vs_planned_20250827_182120.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182121/actual_vs_planned_20250827_182121.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182122/actual_vs_planned_20250827_182122.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182123/actual_vs_planned_20250827_182123.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182124/actual_vs_planned_20250827_182124.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182125/actual_vs_planned_20250827_182125.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182126/actual_vs_planned_20250827_182126.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182127/actual_vs_planned_20250827_182127.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182128/actual_vs_planned_20250827_182128.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182129/actual_vs_planned_20250827_182129.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182130/actual_vs_planned_20250827_182130.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182131/actual_vs_planned_20250827_182131.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182132/actual_vs_planned_20250827_182132.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182133/actual_vs_planned_20250827_182133.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182134/actual_vs_planned_20250827_182134.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182135/actual_vs_planned_20250827_182135.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182136/actual_vs_planned_20250827_182136.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182137/actual_vs_planned_20250827_182137.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182138/actual_vs_planned_20250827_182138.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182139/actual_vs_planned_20250827_182139.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182140/actual_vs_planned_20250827_182140.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182141/actual_vs_planned_20250827_182141.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182142/actual_vs_planned_20250827_182142.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182143/actual_vs_planned_20250827_182143.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182144/actual_vs_planned_20250827_182144.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182145/actual_vs_planned_20250827_182145.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182146/actual_vs_planned_20250827_182146.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182147/actual_vs_planned_20250827_182147.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182148/actual_vs_planned_20250827_182148.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182149/actual_vs_planned_20250827_182149.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182150/actual_vs_planned_20250827_182150.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182151/actual_vs_planned_20250827_182151.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182152/actual_vs_planned_20250827_182152.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182153/actual_vs_planned_20250827_182153.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182154/actual_vs_planned_20250827_182154.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182155/actual_vs_planned_20250827_182155.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182156/actual_vs_planned_20250827_182156.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182157/actual_vs_planned_20250827_182157.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182158/actual_vs_planned_20250827_182158.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182159/actual_vs_planned_20250827_182159.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182200/actual_vs_planned_20250827_182200.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -298      |
+| time/              |           |
+|    episodes        | 450       |
+|    fps             | 124       |
+|    time_elapsed    | 7819      |
+|    total_timesteps | 974069    |
+| train/             |           |
+|    actor_loss      | -2.77e+06 |
+|    critic_loss     | 1.08e+10  |
+|    ent_coef        | 0.000452  |
+|    ent_coef_loss   | 318       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 974068    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182201/actual_vs_planned_20250827_182201.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182202/actual_vs_planned_20250827_182202.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182203/actual_vs_planned_20250827_182203.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182204/actual_vs_planned_20250827_182204.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182205/actual_vs_planned_20250827_182205.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182206/actual_vs_planned_20250827_182206.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182207/actual_vs_planned_20250827_182207.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182208/actual_vs_planned_20250827_182208.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182209/actual_vs_planned_20250827_182209.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182210/actual_vs_planned_20250827_182210.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182211/actual_vs_planned_20250827_182211.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182212/actual_vs_planned_20250827_182212.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182213/actual_vs_planned_20250827_182213.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182214/actual_vs_planned_20250827_182214.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182215/actual_vs_planned_20250827_182215.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182216/actual_vs_planned_20250827_182216.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182217/actual_vs_planned_20250827_182217.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182218/actual_vs_planned_20250827_182218.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182219/actual_vs_planned_20250827_182219.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182220/actual_vs_planned_20250827_182220.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182221/actual_vs_planned_20250827_182221.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182222/actual_vs_planned_20250827_182222.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182223/actual_vs_planned_20250827_182223.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182224/actual_vs_planned_20250827_182224.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182225/actual_vs_planned_20250827_182225.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182226/actual_vs_planned_20250827_182226.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182227/actual_vs_planned_20250827_182227.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182228/actual_vs_planned_20250827_182228.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182229/actual_vs_planned_20250827_182229.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182230/actual_vs_planned_20250827_182230.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182231/actual_vs_planned_20250827_182231.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182232/actual_vs_planned_20250827_182232.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182233/actual_vs_planned_20250827_182233.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182234/actual_vs_planned_20250827_182234.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182235/actual_vs_planned_20250827_182235.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182236/actual_vs_planned_20250827_182236.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182237/actual_vs_planned_20250827_182237.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182238/actual_vs_planned_20250827_182238.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182239/actual_vs_planned_20250827_182239.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182240/actual_vs_planned_20250827_182240.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182241/actual_vs_planned_20250827_182241.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182242/actual_vs_planned_20250827_182242.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182243/actual_vs_planned_20250827_182243.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182244/actual_vs_planned_20250827_182244.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182245/actual_vs_planned_20250827_182245.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182246/actual_vs_planned_20250827_182246.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182247/actual_vs_planned_20250827_182247.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182248/actual_vs_planned_20250827_182248.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182249/actual_vs_planned_20250827_182249.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182250/actual_vs_planned_20250827_182250.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -298      |
+| time/              |           |
+|    episodes        | 500       |
+|    fps             | 124       |
+|    time_elapsed    | 7869      |
+|    total_timesteps | 978069    |
+| train/             |           |
+|    actor_loss      | -2.11e+06 |
+|    critic_loss     | 5.3e+09   |
+|    ent_coef        | 0.00149   |
+|    ent_coef_loss   | 243       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 978068    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182251/actual_vs_planned_20250827_182251.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182252/actual_vs_planned_20250827_182252.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182253/actual_vs_planned_20250827_182253.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182254/actual_vs_planned_20250827_182254.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182255/actual_vs_planned_20250827_182255.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182256/actual_vs_planned_20250827_182256.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182257/actual_vs_planned_20250827_182257.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182258/actual_vs_planned_20250827_182258.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182259/actual_vs_planned_20250827_182259.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182300/actual_vs_planned_20250827_182300.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182301/actual_vs_planned_20250827_182301.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182302/actual_vs_planned_20250827_182302.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182303/actual_vs_planned_20250827_182303.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182304/actual_vs_planned_20250827_182304.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182305/actual_vs_planned_20250827_182305.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182306/actual_vs_planned_20250827_182306.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182307/actual_vs_planned_20250827_182307.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182308/actual_vs_planned_20250827_182308.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182309/actual_vs_planned_20250827_182309.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182310/actual_vs_planned_20250827_182310.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182311/actual_vs_planned_20250827_182311.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182312/actual_vs_planned_20250827_182312.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182313/actual_vs_planned_20250827_182313.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182314/actual_vs_planned_20250827_182314.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182315/actual_vs_planned_20250827_182315.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182316/actual_vs_planned_20250827_182316.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182317/actual_vs_planned_20250827_182317.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182318/actual_vs_planned_20250827_182318.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182319/actual_vs_planned_20250827_182319.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182320/actual_vs_planned_20250827_182320.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182321/actual_vs_planned_20250827_182321.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182322/actual_vs_planned_20250827_182322.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182323/actual_vs_planned_20250827_182323.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182324/actual_vs_planned_20250827_182324.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182325/actual_vs_planned_20250827_182325.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182326/actual_vs_planned_20250827_182326.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182327/actual_vs_planned_20250827_182327.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182328/actual_vs_planned_20250827_182328.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182329/actual_vs_planned_20250827_182329.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182330/actual_vs_planned_20250827_182330.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182331/actual_vs_planned_20250827_182331.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182332/actual_vs_planned_20250827_182332.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182333/actual_vs_planned_20250827_182333.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182334/actual_vs_planned_20250827_182334.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182335/actual_vs_planned_20250827_182335.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182336/actual_vs_planned_20250827_182336.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182337/actual_vs_planned_20250827_182337.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182338/actual_vs_planned_20250827_182338.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182339/actual_vs_planned_20250827_182339.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182340/actual_vs_planned_20250827_182340.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -297      |
+| time/              |           |
+|    episodes        | 550       |
+|    fps             | 124       |
+|    time_elapsed    | 7919      |
+|    total_timesteps | 982069    |
+| train/             |           |
+|    actor_loss      | -2.09e+06 |
+|    critic_loss     | 4.07e+09  |
+|    ent_coef        | 0.00495   |
+|    ent_coef_loss   | 200       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 982068    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182341/actual_vs_planned_20250827_182341.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182342/actual_vs_planned_20250827_182342.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182343/actual_vs_planned_20250827_182343.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182344/actual_vs_planned_20250827_182344.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182345/actual_vs_planned_20250827_182345.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182346/actual_vs_planned_20250827_182346.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182347/actual_vs_planned_20250827_182347.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182348/actual_vs_planned_20250827_182348.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182349/actual_vs_planned_20250827_182349.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182350/actual_vs_planned_20250827_182350.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182351/actual_vs_planned_20250827_182351.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182352/actual_vs_planned_20250827_182352.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182353/actual_vs_planned_20250827_182353.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182354/actual_vs_planned_20250827_182354.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182355/actual_vs_planned_20250827_182355.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182356/actual_vs_planned_20250827_182356.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182357/actual_vs_planned_20250827_182357.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182358/actual_vs_planned_20250827_182358.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182359/actual_vs_planned_20250827_182359.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182400/actual_vs_planned_20250827_182400.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182401/actual_vs_planned_20250827_182401.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182402/actual_vs_planned_20250827_182402.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182403/actual_vs_planned_20250827_182403.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182404/actual_vs_planned_20250827_182404.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182405/actual_vs_planned_20250827_182405.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182406/actual_vs_planned_20250827_182406.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182407/actual_vs_planned_20250827_182407.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182408/actual_vs_planned_20250827_182408.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182409/actual_vs_planned_20250827_182409.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182410/actual_vs_planned_20250827_182410.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182411/actual_vs_planned_20250827_182411.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182412/actual_vs_planned_20250827_182412.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182413/actual_vs_planned_20250827_182413.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182414/actual_vs_planned_20250827_182414.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182415/actual_vs_planned_20250827_182415.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182416/actual_vs_planned_20250827_182416.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182417/actual_vs_planned_20250827_182417.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182418/actual_vs_planned_20250827_182418.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182419/actual_vs_planned_20250827_182419.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182420/actual_vs_planned_20250827_182420.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182421/actual_vs_planned_20250827_182421.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182422/actual_vs_planned_20250827_182422.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182423/actual_vs_planned_20250827_182423.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182424/actual_vs_planned_20250827_182424.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182425/actual_vs_planned_20250827_182425.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182426/actual_vs_planned_20250827_182426.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182427/actual_vs_planned_20250827_182427.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182428/actual_vs_planned_20250827_182428.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182429/actual_vs_planned_20250827_182429.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182430/actual_vs_planned_20250827_182430.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -297      |
+| time/              |           |
+|    episodes        | 600       |
+|    fps             | 123       |
+|    time_elapsed    | 7969      |
+|    total_timesteps | 986069    |
+| train/             |           |
+|    actor_loss      | -1.77e+06 |
+|    critic_loss     | 4.62e+09  |
+|    ent_coef        | 0.0163    |
+|    ent_coef_loss   | 153       |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 986068    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182431/actual_vs_planned_20250827_182431.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182432/actual_vs_planned_20250827_182432.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182433/actual_vs_planned_20250827_182433.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182434/actual_vs_planned_20250827_182434.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182435/actual_vs_planned_20250827_182435.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182436/actual_vs_planned_20250827_182436.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182437/actual_vs_planned_20250827_182437.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182438/actual_vs_planned_20250827_182438.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182439/actual_vs_planned_20250827_182439.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182440/actual_vs_planned_20250827_182440.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182441/actual_vs_planned_20250827_182441.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182442/actual_vs_planned_20250827_182442.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182443/actual_vs_planned_20250827_182443.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182444/actual_vs_planned_20250827_182444.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182445/actual_vs_planned_20250827_182445.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182446/actual_vs_planned_20250827_182446.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182447/actual_vs_planned_20250827_182447.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182448/actual_vs_planned_20250827_182448.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182449/actual_vs_planned_20250827_182449.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182450/actual_vs_planned_20250827_182450.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182451/actual_vs_planned_20250827_182451.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182452/actual_vs_planned_20250827_182452.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182453/actual_vs_planned_20250827_182453.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182454/actual_vs_planned_20250827_182454.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182455/actual_vs_planned_20250827_182455.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182456/actual_vs_planned_20250827_182456.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182457/actual_vs_planned_20250827_182457.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182458/actual_vs_planned_20250827_182458.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182459/actual_vs_planned_20250827_182459.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182500/actual_vs_planned_20250827_182500.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182501/actual_vs_planned_20250827_182501.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182502/actual_vs_planned_20250827_182502.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182503/actual_vs_planned_20250827_182503.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182504/actual_vs_planned_20250827_182504.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182505/actual_vs_planned_20250827_182505.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182506/actual_vs_planned_20250827_182506.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182507/actual_vs_planned_20250827_182507.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182508/actual_vs_planned_20250827_182508.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182509/actual_vs_planned_20250827_182509.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182510/actual_vs_planned_20250827_182510.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182511/actual_vs_planned_20250827_182511.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182511/actual_vs_planned_20250827_182511.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182512/actual_vs_planned_20250827_182512.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182513/actual_vs_planned_20250827_182513.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182514/actual_vs_planned_20250827_182514.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182515/actual_vs_planned_20250827_182515.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182516/actual_vs_planned_20250827_182516.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182518/actual_vs_planned_20250827_182518.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182519/actual_vs_planned_20250827_182519.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182520/actual_vs_planned_20250827_182520.png
+episode done
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 80       |
+|    ep_rew_mean     | -297     |
+| time/              |          |
+|    episodes        | 650      |
+|    fps             | 123      |
+|    time_elapsed    | 8018     |
+|    total_timesteps | 990069   |
+| train/             |          |
+|    actor_loss      | -1.7e+06 |
+|    critic_loss     | 6.83e+09 |
+|    ent_coef        | 0.0538   |
+|    ent_coef_loss   | 107      |
+|    learning_rate   | 0.0003   |
+|    n_updates       | 990068   |
+---------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182521/actual_vs_planned_20250827_182521.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182521/actual_vs_planned_20250827_182521.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182523/actual_vs_planned_20250827_182523.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182523/actual_vs_planned_20250827_182523.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182524/actual_vs_planned_20250827_182524.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182525/actual_vs_planned_20250827_182525.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182527/actual_vs_planned_20250827_182527.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182528/actual_vs_planned_20250827_182528.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182529/actual_vs_planned_20250827_182529.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182530/actual_vs_planned_20250827_182530.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182531/actual_vs_planned_20250827_182531.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182532/actual_vs_planned_20250827_182532.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182533/actual_vs_planned_20250827_182533.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182534/actual_vs_planned_20250827_182534.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182535/actual_vs_planned_20250827_182535.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182536/actual_vs_planned_20250827_182536.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182537/actual_vs_planned_20250827_182537.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182538/actual_vs_planned_20250827_182538.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182539/actual_vs_planned_20250827_182539.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182540/actual_vs_planned_20250827_182540.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182541/actual_vs_planned_20250827_182541.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182542/actual_vs_planned_20250827_182542.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182543/actual_vs_planned_20250827_182543.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182544/actual_vs_planned_20250827_182544.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182544/actual_vs_planned_20250827_182544.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182546/actual_vs_planned_20250827_182546.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182546/actual_vs_planned_20250827_182546.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182547/actual_vs_planned_20250827_182547.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182548/actual_vs_planned_20250827_182548.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182549/actual_vs_planned_20250827_182549.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182550/actual_vs_planned_20250827_182550.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182551/actual_vs_planned_20250827_182551.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182552/actual_vs_planned_20250827_182552.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182553/actual_vs_planned_20250827_182553.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182554/actual_vs_planned_20250827_182554.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182555/actual_vs_planned_20250827_182555.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182556/actual_vs_planned_20250827_182556.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182557/actual_vs_planned_20250827_182557.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182558/actual_vs_planned_20250827_182558.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182559/actual_vs_planned_20250827_182559.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182600/actual_vs_planned_20250827_182600.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182601/actual_vs_planned_20250827_182601.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182603/actual_vs_planned_20250827_182603.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182604/actual_vs_planned_20250827_182604.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182605/actual_vs_planned_20250827_182605.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182606/actual_vs_planned_20250827_182606.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182607/actual_vs_planned_20250827_182607.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182607/actual_vs_planned_20250827_182607.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182608/actual_vs_planned_20250827_182608.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182609/actual_vs_planned_20250827_182609.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -297      |
+| time/              |           |
+|    episodes        | 700       |
+|    fps             | 123       |
+|    time_elapsed    | 8068      |
+|    total_timesteps | 994069    |
+| train/             |           |
+|    actor_loss      | -1.65e+06 |
+|    critic_loss     | 1.3e+10   |
+|    ent_coef        | 0.175     |
+|    ent_coef_loss   | 59.3      |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 994068    |
+----------------------------------
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182610/actual_vs_planned_20250827_182610.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182611/actual_vs_planned_20250827_182611.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182612/actual_vs_planned_20250827_182612.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182613/actual_vs_planned_20250827_182613.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182614/actual_vs_planned_20250827_182614.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182615/actual_vs_planned_20250827_182615.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182616/actual_vs_planned_20250827_182616.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182617/actual_vs_planned_20250827_182617.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182618/actual_vs_planned_20250827_182618.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182619/actual_vs_planned_20250827_182619.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182620/actual_vs_planned_20250827_182620.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182621/actual_vs_planned_20250827_182621.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182622/actual_vs_planned_20250827_182622.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182623/actual_vs_planned_20250827_182623.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182624/actual_vs_planned_20250827_182624.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182625/actual_vs_planned_20250827_182625.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182626/actual_vs_planned_20250827_182626.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182627/actual_vs_planned_20250827_182627.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182628/actual_vs_planned_20250827_182628.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182629/actual_vs_planned_20250827_182629.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182630/actual_vs_planned_20250827_182630.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182631/actual_vs_planned_20250827_182631.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182632/actual_vs_planned_20250827_182632.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182633/actual_vs_planned_20250827_182633.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182634/actual_vs_planned_20250827_182634.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182635/actual_vs_planned_20250827_182635.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182636/actual_vs_planned_20250827_182636.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182637/actual_vs_planned_20250827_182637.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182638/actual_vs_planned_20250827_182638.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182639/actual_vs_planned_20250827_182639.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182640/actual_vs_planned_20250827_182640.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182641/actual_vs_planned_20250827_182641.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182642/actual_vs_planned_20250827_182642.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182643/actual_vs_planned_20250827_182643.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182644/actual_vs_planned_20250827_182644.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182645/actual_vs_planned_20250827_182645.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182646/actual_vs_planned_20250827_182646.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182647/actual_vs_planned_20250827_182647.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182648/actual_vs_planned_20250827_182648.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182649/actual_vs_planned_20250827_182649.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182650/actual_vs_planned_20250827_182650.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182651/actual_vs_planned_20250827_182651.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182652/actual_vs_planned_20250827_182652.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182653/actual_vs_planned_20250827_182653.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182654/actual_vs_planned_20250827_182654.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182655/actual_vs_planned_20250827_182655.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182656/actual_vs_planned_20250827_182656.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182657/actual_vs_planned_20250827_182657.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182658/actual_vs_planned_20250827_182658.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182659/actual_vs_planned_20250827_182659.png
+episode done
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 80        |
+|    ep_rew_mean     | -297      |
+| time/              |           |
+|    episodes        | 750       |
+|    fps             | 122       |
+|    time_elapsed    | 8118      |
+|    total_timesteps | 998069    |
+| train/             |           |
+|    actor_loss      | -1.82e+06 |
+|    critic_loss     | 2.89e+09  |
+|    ent_coef        | 0.569     |
+|    ent_coef_loss   | 17.6      |
+|    learning_rate   | 0.0003    |
+|    n_updates       | 998068    |
+----------------------------------
+/home/wise/anaconda3/envs/carla/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182700/actual_vs_planned_20250827_182700.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182701/actual_vs_planned_20250827_182701.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182702/actual_vs_planned_20250827_182702.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182703/actual_vs_planned_20250827_182703.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182704/actual_vs_planned_20250827_182704.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182705/actual_vs_planned_20250827_182705.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182706/actual_vs_planned_20250827_182706.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182707/actual_vs_planned_20250827_182707.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182708/actual_vs_planned_20250827_182708.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182709/actual_vs_planned_20250827_182709.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182710/actual_vs_planned_20250827_182710.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182711/actual_vs_planned_20250827_182711.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182712/actual_vs_planned_20250827_182712.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182713/actual_vs_planned_20250827_182713.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182714/actual_vs_planned_20250827_182714.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182715/actual_vs_planned_20250827_182715.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182716/actual_vs_planned_20250827_182716.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182717/actual_vs_planned_20250827_182717.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182718/actual_vs_planned_20250827_182718.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182719/actual_vs_planned_20250827_182719.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182720/actual_vs_planned_20250827_182720.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182721/actual_vs_planned_20250827_182721.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182722/actual_vs_planned_20250827_182722.png
+episode done
+충돌 발생 - 충돌 대상: static.wall
+실제 주행 경로가 시각화되어 저장됨: logs/route_visualization/SAC_RND_TESTING_CRITIC/_20250827_182723/actual_vs_planned_20250827_182723.png
+episode done
+WARNING: sensor object went out of the scope but the sensor is still alive in the simulation: Actor 1634 (sensor.other.collision) 
+terminate called without an active exception

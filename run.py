@@ -1,7 +1,7 @@
 import os
 import sys
 # 현재 디렉토리에서 carla-*.egg 파일 경로를 자동으로 찾아서 sys.path에 추가
-sys.path.append('/home/wise/chaewon/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
+sys.path.append('/home/jingjingee198/auto-vehicle/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
 import carla
 
 from agents.pid_control import run_pid_drive_with_log
@@ -58,7 +58,7 @@ def pid_control(start_coords, end_coords , filename):
         
         client, world, carla_map = connect_to_carla()
         blueprint_library = world.get_blueprint_library()
-        visualize_all_waypoints(carla_map)
+        # visualize_all_waypoints(carla_map)
     
         start = start_coords 
         end = end_coords 

@@ -1,7 +1,6 @@
 import os, sys
 
 from agents.rnd import RND
-
 sys.path.append('/home/wise/chaewon/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg')
 import carla  
 import gym
@@ -18,8 +17,9 @@ from datetime import datetime
 DATA_DIR = "dataset_1"  
 SIMULATION = "SAC_RND_TESTING_CRITIC"
 NOW = ""
+
 def make_env(batch_size):
-    NOW = str(datetime.now())
+    NOW = datetime.now().strftime("%Y%m%d_%H%M%S")
     # carla 연결 
     client, world, carla_map = connect_to_carla()
     # 주행 시작 포인트 
@@ -31,8 +31,7 @@ def make_env(batch_size):
         world=world,
         carla_map=carla_map,
         points=start_point,
-        simulation=SIMULATION,
-        logs = "logs/"+SIMULATION+"/"+NOW,
+        simulation="logs/"+SIMULATION+"/"+NOW,
         target_speed=22.0
     )
     env = Monitor(env)
@@ -50,20 +49,32 @@ def main(batch_size):
     env = make_vec_env(batch_size)
     
     # 강화학습 모델 생성 
-    trainer = SACOfflineOnline(env=env, buffer_size=1_000_000, batch_size=batch_size, tau=0.005, verbose=1, tensorboard_log="logs/"+SIMULATION+"/"+NOW)
+    trainer = SACOfflineOnline(env=env, buffer_size=4_000_000, batch_size=batch_size, tau=0.005, verbose=1, tensorboard_log="logs/"+SIMULATION+"/"+NOW)
     
     obs_dim = env.observation_space.shape[0] + env.action_space.shape[0]
     rnd = RND(obs_dim, lr=1e-3, device=str(trainer.device))
    
-   # pretrain with only route 6 data 
-    trainer.prefill_from_npz_folder(DATA_DIR)
-    trainer.pretrain_mcnet_supervised(steps=500000)
+    print("모든 데이터 버퍼에 저장")
+    trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
+    print("critic pretrain => warm start")
     trainer.attach_rnd(rnd)
-    trainer.pretrain_critic(steps=1000000)  
-    trainer.pretrain_actor(steps=1000000)
+    trainer.pretrain_critic()
+    print("모든 주행 데이터 actor behavioral cloning")
+    trainer.pretrain_actor(100000)
+    
+    
+    print("여러 주행 데이터로 mcnet 학습")  
+    trainer.replay_buffer.reset()
+    print("data filling start")
+    trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
+    print("mcnet 학습중")
+    trainer.train_mcnet_from_buffer(epochs=0)
+    print("mcnet 모델 저장")
+    trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
+    trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")
     
     trainer.save(f"pretrained_actor_critic_1M.zip")
-    trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name=SIMULATION+str(batch_size))
+    trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
 
     trainer.save(f"trained_1M_1M.zip")
     env.close()
@@ -76,6 +87,6 @@ if __name__ == "__main__":
             print("첫 번째 인자는 batch_size 정수여야 합니다.")
             sys.exit(1)
     else:
-        batch_size = 256 
+        batch_size = 256
 
     main(batch_size)

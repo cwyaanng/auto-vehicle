@@ -67,34 +67,34 @@ class SACOfflineOnline:
       n_added, n_files = 0, 0
 
       for path in files:
-          with np.load(path, allow_pickle=False) as d:
-              obs  = d["observations"].astype(np.float32)
-              acts = d["actions"].astype(np.float32)
-              rews = d["rewards"].astype(np.float32).reshape(-1, 1)
-              nobs = d["next_observations"].astype(np.float32)
-              dones = d["terminals"].astype(np.float32).reshape(-1, 1)
+            with np.load(path, allow_pickle=False) as d:
+                obs  = d["observations"].astype(np.float32)
+                acts = d["actions"].astype(np.float32)
+                rews = d["rewards"].astype(np.float32).reshape(-1, 1)
+                nobs = d["next_observations"].astype(np.float32)
+                dones = d["terminals"].astype(np.float32).reshape(-1, 1)
 
-          N = min(len(obs), len(acts), len(rews), len(nobs), len(dones))
-          if N == 0:
-              continue
-          obs, acts, rews, nobs, dones = obs[:N], acts[:N], rews[:N], nobs[:N], dones[:N]
+            N = min(len(obs), len(acts), len(rews), len(nobs), len(dones))
+            if N == 0:
+                continue
+            obs, acts, rews, nobs, dones = obs[:N], acts[:N], rews[:N], nobs[:N], dones[:N]
 
-          if clip_actions and act_low is not None and act_high is not None:
-              acts = np.clip(acts, act_low, act_high)
+            if clip_actions and act_low is not None and act_high is not None:
+                acts = np.clip(acts, act_low, act_high)
 
-          for o, no, a, r, d in zip(obs, nobs, acts, rews, dones):
-            self.model.replay_buffer.add(
-                o[None, :],            # (1, obs_dim)
-                no[None, :],           # (1, obs_dim)
-                a[None, :],            # (1, act_dim)
-                np.array([float(r)], dtype=np.float32),   # (1,)
-                np.array([bool(d)], dtype=np.float32),    # (1,)
-                [ {"TimeLimit.truncated": False} ]        # ★ 리스트 안에 dict 하나
-            )
+            for o, no, a, r, d in zip(obs, nobs, acts, rews, dones):
+                self.model.replay_buffer.add(
+                    o[None, :],            # (1, obs_dim)
+                    no[None, :],           # (1, obs_dim)
+                    a[None, :],            # (1, act_dim)
+                    np.array([float(r)], dtype=np.float32),   # (1,)
+                    np.array([bool(d)], dtype=np.float32),    # (1,)
+                    [ {"TimeLimit.truncated": False} ]        # ★ 리스트 안에 dict 하나
+                )
 
 
-          n_added += N
-          n_files += 1
+            n_added += N
+            n_files += 1
 
       print("Prefilled {} transitions from {} files.".format(n_added, n_files))
       return n_added
@@ -102,7 +102,7 @@ class SACOfflineOnline:
   """
     ---------- Critic만 오프라인 사전학습 ----------
   """
-  def pretrain_critic(self, steps=5000, polyak_every=2):
+  def pretrain_critic(self, steps=50000, polyak_every=2):
       self.critic.train()
       self.actor.eval()
       for step in range(steps): # 오프라인 배치로 steps번 업데이트 
@@ -141,9 +141,6 @@ class SACOfflineOnline:
           if (step + 1) % polyak_every == 0:
               polyak_update(self.critic.parameters(), self.critic_target.parameters(), self.tau)
 
-  """
-    ---------- Actor만 오프라인 사전학습(critic 고정) ----------
-  """
   def pretrain_actor(self, steps=3000):
       # critic을 고정해서, actor 업데이트 때 Q 네트워크가 바뀌지 않도록 함
       for p in self.critic.parameters():
@@ -171,7 +168,7 @@ class SACOfflineOnline:
           actor_loss = (alpha * logp_pi - q_pi).mean()
           # SAC actor 목적: J_π = E[ α·logπ(a|s) - Q(s,a) ] 를 최소화
           # = 엔트로피(무작위성)를 키우되(Q가 큰 행동을 선호), Q가 큰 행동을 더 선택하도록 학습
-          print(f"[ACTOR PRETRAIN] actor loss : {actor_loss}")
+
           self.actor_opt.zero_grad() # 이전 step의 기울기 초기화(누적 방지)
           actor_loss.backward()  # 역전파: actor 파라미터에 대한 grad 계산
           self.actor_opt.step()  # 옵티마이저로 actor 파라미터 한 스텝 업데이트
