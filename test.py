@@ -34,7 +34,11 @@ def set_seeds(seed: int):
     random.seed(seed)
     np.random.seed(seed)
     th.manual_seed(seed)
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> f2c03ccae9528b6c6d62bae2852e27b37d898af3
 def peek_state_action_dim(file_path, state_key, action_key):
     d = np.load(file_path)
     S = d[state_key].shape[1]

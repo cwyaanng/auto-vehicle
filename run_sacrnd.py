@@ -73,6 +73,8 @@ def main(batch_size):
     trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
     trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")
     
+    print("모든 주행 데이터 넣음")
+    trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
     trainer.save(f"pretrained_actor_critic_1M.zip")
     trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
 

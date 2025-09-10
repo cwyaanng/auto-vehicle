@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import d3rlpy
 from d3rlpy.algos import CQL
@@ -57,3 +58,20 @@ cql.fit_online(
 # === 5. 모델 저장 ===
 cql.save_model("cql_offline_online.d3")
 print("✅ Fine-Tuning 완료, 모델 저장됨.")
+=======
+import d3rlpy
+
+# 대표적인 알고리즘들
+from d3rlpy.algos import (
+    DQN, DoubleDQN,
+    DDPG, TD3, SAC,
+    BC, BCQ, BEAR,
+    CQL, AWAC
+)
+
+print("D3RLPY 0.x 알고리즘들:")
+print([cls.__name__ for cls in [
+    DQN, DoubleDQN, DDPG, TD3, SAC,
+    BC, BCQ, BEAR, CQL, AWAC
+]])
+>>>>>>> f2c03ccae9528b6c6d62bae2852e27b37d898af3
