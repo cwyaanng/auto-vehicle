@@ -68,7 +68,7 @@ def main(batch_size):
     print("data filling start")
     trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
     print("mcnet 학습중")
-    trainer.train_mcnet_from_buffer(epochs=0)
+    trainer.train_mcnet_from_buffer(epochs=30)
     print("mcnet 모델 저장")
     trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
     trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")

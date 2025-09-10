@@ -91,6 +91,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         
         self.obs_rms = RunningMeanStd()
         self.act_rms = RunningMeanStd()
+        self.gamma = 0.99
 
 
    
@@ -221,7 +222,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             if clip_actions and act_low is not None and act_high is not None:
                 acts = np.clip(acts, act_low, act_high)
 
-            for o, no, a, r, d in zip(obs, nobs, acts, rews, dones): # 전이 하나씩 삽입이라는데 [의문]
+            for o, no, a, r, d in zip(obs, nobs, acts, rews, dones): # 전이 하나씩 삽입이라는데 
                 self.replay_buffer.add(
                     o[None, :],                           # (1, obs_dim)
                     no[None, :],                          # (1, obs_dim)
@@ -360,7 +361,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             if not isinstance(tensor, th.Tensor):
                 continue
             if th.isnan(tensor).any() or th.isinf(tensor).any():
-                print(f"[⚠️ NaN DETECTED] step {step} | phase: {phase} | tensor: '{name}'")
+                print(f"[NaN DETECTED] step {step} | phase: {phase} | tensor: '{name}'")
                 print(f"→ Shape: {tuple(tensor.shape)}")
                 print(f"→ Values (sample): {tensor.flatten()[:5].tolist()}")
                 print(f"→ Stats: mean={tensor.float().mean().item():.4f}, std={tensor.float().std().item():.4f}")

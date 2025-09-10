@@ -2363,3 +2363,132 @@ cal_q: calibrated_q | shape: [256, 1] | mean: 0.0877 | std: 0.6764 | min: -2.631
 [onl] up 595000 | crit:0.0061 | actor:-0.0873
 실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_171802/actual_vs_planned_20250910_171802.png
 [onl] up 596000 | crit:0.0044 | actor:-0.0722
+[onl] up 597000 | crit:0.0044 | actor:-0.1226
+[onl] up 598000 | crit:0.0040 | actor:-0.0922
+[onl] up 599000 | crit:0.0064 | actor:-0.0890
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_171836/actual_vs_planned_20250910_171836.png
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_171909/actual_vs_planned_20250910_171909.png
+[Update 600000]
+w: w | shape: [256, 1] | mean: 0.4201 | std: 0.1042 | min: 0.1926 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.2047 | std: 0.6299 | min: -1.6073 | max: 1.6296
+mc_q: mc_q | shape: [256, 1] | mean: 1689.2561 | std: 658.0173 | min: -26.3447 | max: 4390.9727
+logp: logp | shape: [256, 1] | mean: 1.4503 | std: 2.7778 | min: -3.9676 | max: 9.9783
+alpha: 0.00023663867614232004
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1040 | std: 0.6989 | min: -1.2517 | max: 2.1554
+--------------------------------------------------
+[onl] up 600000 | crit:0.0038 | actor:-0.1037
+[onl] up 601000 | crit:0.0058 | actor:-0.1232
+[onl] up 602000 | crit:0.0121 | actor:-0.1207
+[onl] up 603000 | crit:0.0037 | actor:-0.1378
+[onl] up 604000 | crit:0.0048 | actor:-0.1028
+[Update 605000]
+w: w | shape: [256, 1] | mean: 0.4253 | std: 0.1034 | min: 0.1822 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.1551 | std: 0.6992 | min: -3.6346 | max: 1.6581
+mc_q: mc_q | shape: [256, 1] | mean: 1769.1661 | std: 626.9670 | min: 388.6059 | max: 4935.3145
+logp: logp | shape: [256, 1] | mean: 1.7117 | std: 3.1459 | min: -4.7941 | max: 21.0073
+alpha: 0.00023126542509999126
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1175 | std: 0.6773 | min: -1.7684 | max: 1.9720
+--------------------------------------------------
+[onl] up 605000 | crit:0.0042 | actor:-0.1171
+[onl] up 606000 | crit:0.0040 | actor:-0.1209
+[onl] up 607000 | crit:0.0067 | actor:-0.1293
+[onl] up 608000 | crit:0.0046 | actor:-0.1081
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_171915/actual_vs_planned_20250910_171915.png
+[onl] up 609000 | crit:0.0135 | actor:-0.1177
+[Update 610000]
+w: w | shape: [256, 1] | mean: 0.4290 | std: 0.1016 | min: 0.1768 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.1198 | std: 0.6962 | min: -2.4531 | max: 1.8775
+mc_q: mc_q | shape: [256, 1] | mean: 1825.9342 | std: 592.9659 | min: 327.5861 | max: 3660.6311
+logp: logp | shape: [256, 1] | mean: 1.5038 | std: 2.8239 | min: -4.1857 | max: 9.0072
+alpha: 0.00020538046373985708
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1249 | std: 0.6983 | min: -1.6155 | max: 2.0613
+--------------------------------------------------
+[onl] up 610000 | crit:0.0050 | actor:-0.1246
+[onl] up 611000 | crit:0.0049 | actor:-0.1248
+[onl] up 612000 | crit:0.0052 | actor:-0.1155
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172023/actual_vs_planned_20250910_172023.png
+충돌 발생 - 충돌 대상: static.pole
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172055/actual_vs_planned_20250910_172055.png
+[onl] up 613000 | crit:0.0066 | actor:-0.1156
+[onl] up 614000 | crit:0.0033 | actor:-0.1085
+[Update 615000]
+w: w | shape: [256, 1] | mean: 0.4268 | std: 0.1034 | min: 0.1717 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.1058 | std: 0.7055 | min: -3.3780 | max: 1.7683
+mc_q: mc_q | shape: [256, 1] | mean: 1807.3013 | std: 846.9749 | min: -292.7437 | max: 9633.1543
+logp: logp | shape: [256, 1] | mean: 1.5638 | std: 3.3715 | min: -3.9690 | max: 20.3752
+alpha: 0.00020664809562731534
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1233 | std: 0.6632 | min: -0.8467 | max: 2.3008
+--------------------------------------------------
+[onl] up 615000 | crit:0.0059 | actor:-0.1230
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172059/actual_vs_planned_20250910_172059.png
+[onl] up 616000 | crit:0.0043 | actor:-0.1372
+충돌 발생 - 충돌 대상: static.pole
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172126/actual_vs_planned_20250910_172126.png
+[onl] up 617000 | crit:0.0048 | actor:-0.1307
+[onl] up 618000 | crit:0.0174 | actor:-0.1112
+충돌 발생 - 충돌 대상: static.pole
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172129/actual_vs_planned_20250910_172129.png
+[onl] up 619000 | crit:0.0063 | actor:-0.1370
+[Update 620000]
+w: w | shape: [256, 1] | mean: 0.4216 | std: 0.1032 | min: 0.1804 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.0398 | std: 0.6975 | min: -1.7624 | max: 1.8296
+mc_q: mc_q | shape: [256, 1] | mean: 1566.3705 | std: 686.5152 | min: 73.2644 | max: 4086.8745
+logp: logp | shape: [256, 1] | mean: 1.4020 | std: 2.5495 | min: -3.2225 | max: 9.9899
+alpha: 0.0002036176301771775
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1240 | std: 0.7158 | min: -0.9109 | max: 2.1482
+--------------------------------------------------
+[onl] up 620000 | crit:0.0040 | actor:-0.1237
+[onl] up 621000 | crit:0.0041 | actor:-0.1162
+충돌 발생 - 충돌 대상: static.pole
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172145/actual_vs_planned_20250910_172145.png
+[onl] up 622000 | crit:0.0045 | actor:-0.1124
+[onl] up 623000 | crit:0.0136 | actor:-0.1094
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172214/actual_vs_planned_20250910_172214.png
+[onl] up 624000 | crit:0.0058 | actor:-0.1230
+[Update 625000]
+w: w | shape: [256, 1] | mean: 0.4325 | std: 0.0969 | min: 0.1832 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.1187 | std: 0.6369 | min: -2.4413 | max: 1.8844
+mc_q: mc_q | shape: [256, 1] | mean: 1608.9529 | std: 671.7335 | min: -7.4490 | max: 4752.3320
+logp: logp | shape: [256, 1] | mean: 1.4828 | std: 2.8705 | min: -6.1921 | max: 10.7975
+alpha: 0.00019988318672403693
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1074 | std: 0.6927 | min: -1.1304 | max: 2.4672
+--------------------------------------------------
+[onl] up 625000 | crit:0.0047 | actor:-0.1071
+[onl] up 626000 | crit:0.0150 | actor:-0.1328
+[onl] up 627000 | crit:0.0037 | actor:-0.1226
+[onl] up 628000 | crit:0.0051 | actor:-0.1270
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172231/actual_vs_planned_20250910_172231.png
+[onl] up 629000 | crit:0.0073 | actor:-0.1137
+[Update 630000]
+w: w | shape: [256, 1] | mean: 0.4365 | std: 0.0914 | min: 0.2001 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: -0.0612 | std: 0.5464 | min: -1.4265 | max: 1.7867
+mc_q: mc_q | shape: [256, 1] | mean: 1665.1500 | std: 596.5479 | min: -273.1040 | max: 3600.0444
+logp: logp | shape: [256, 1] | mean: 1.8040 | std: 2.9399 | min: -6.5460 | max: 11.8224
+alpha: 0.00019656970107462257
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.0960 | std: 0.7381 | min: -1.0848 | max: 2.3737
+--------------------------------------------------
+[onl] up 630000 | crit:0.0157 | actor:-0.0957
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172311/actual_vs_planned_20250910_172311.png
+[onl] up 631000 | crit:0.0041 | actor:-0.1144
+[onl] up 632000 | crit:0.0051 | actor:-0.1146
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172329/actual_vs_planned_20250910_172329.png
+[onl] up 633000 | crit:0.0052 | actor:-0.0955
+[onl] up 634000 | crit:0.0036 | actor:-0.0971
+실제 주행 경로가 시각화되어 저장됨: logs/SAC_RND_TESTING_CRITIC/20250910_154850/route_visualization/_20250910_172346/actual_vs_planned_20250910_172346.png
+[Update 635000]
+w: w | shape: [256, 1] | mean: 0.4264 | std: 0.1035 | min: 0.1915 | max: 0.5000
+q_pi: q_pi | shape: [256, 1] | mean: 0.0365 | std: 0.7013 | min: -1.6161 | max: 1.8919
+mc_q: mc_q | shape: [256, 1] | mean: 1704.8199 | std: 650.9600 | min: -43.6109 | max: 4289.6963
+logp: logp | shape: [256, 1] | mean: 1.3193 | std: 2.8537 | min: -4.9420 | max: 11.6923
+alpha: 0.000218291359487921
+cal_q: calibrated_q | shape: [256, 1] | mean: 0.1159 | std: 0.7043 | min: -1.2448 | max: 2.1830
+--------------------------------------------------
+[onl] up 635000 | crit:0.0121 | actor:-0.1156
+[onl] up 636000 | crit:0.0066 | actor:-0.1138
+[onl] up 637000 | crit:0.0034 | actor:-0.1081
+[onl] up 638000 | crit:0.0063 | actor:-0.0954
+[onl] up 639000 | crit:0.0058 | actor:-0.1124
