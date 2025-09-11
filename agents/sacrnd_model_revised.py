@@ -167,7 +167,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
     # 직선 도로에 해당하는 오프라인 파일만 버퍼에 집어넣기 
     def prefill_from_npz_folder(self, data_dir: str, clip_actions: bool = True) -> int:
-   
+        self.mc_targets = [] 
         files = sorted(glob.glob(os.path.join(data_dir, "route_6*.npz")))
         if not files:
             raise FileNotFoundError(f"No .npz files in {data_dir}")
@@ -176,7 +176,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         act_high = getattr(self.action_space, "high", None)
 
         n_added, n_files = 0, 0
-
+        all_rews = []
+        all_dones = []
         for path in files:
             with np.load(path, allow_pickle=False) as d:
                 obs = d["observations"].astype(np.float32)
@@ -202,17 +203,19 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                     np.array([bool(d)], np.float32),      # (1,)
                     [{"TimeLimit.truncated": False}],     # info list 길이 = n_envs(=1)
                 )
+                all_rews.append(float(r))
+                all_dones.append(bool(d))
                 self.obs_rms.update(th.tensor(o).unsqueeze(0))  # shape (1, obs_dim)
                 self.act_rms.update(th.tensor(a).unsqueeze(0))  # shape (1, act_dim)
             n_added += N
             n_files += 1
      
-        # mc_returns = self.compute_mc_returns(
-        #     gamma=self.gamma,
-        #     rewards=rews.flatten(),
-        #     dones=dones.flatten()
-        # )
-        # self.mc_targets.extend(mc_returns.tolist())
+        mc_returns = self.compute_mc_returns(
+            gamma=self.gamma,
+            rewards=np.array(all_rews),
+            dones=np.array(all_dones)
+        )
+        self.mc_targets = mc_returns.tolist()
         return n_added
 
     # 다양한 경로에 해당하는 오프라인 파일만 버퍼에 집어넣기 
@@ -320,7 +323,20 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 pred = self.mcnet(x)
                 loss = F.mse_loss(pred, target)
                 if i % 100 == 0:
-                    print(f"prediction : {pred} , target : {target} , loss : {loss}")
+                    p = pred[:5].detach().squeeze(-1).cpu().numpy()   # 앞 5개만
+                    t = target[:5].detach().squeeze(-1).cpu().numpy()
+
+                    # 요약 통계 + 일부 샘플만 보여주자 (훈련 느려지지 않게)
+                    print(
+                        f"[MCNet] i={i:06d} | "
+                        f"loss={loss.item():.4f} | "
+                        f"pred[:5]={np.round(p, 3)} | "
+                        f"targ[:5]={np.round(t, 3)} | "
+                        f"pμ={pred.mean().item():.3f} p_sigma={pred.std().item():.3f} | "
+                        f"tμ={target.mean().item():.3f} t_sigma={target.std().item():.3f} | "
+                        f"shape p={tuple(pred.shape)} t={tuple(target.shape)}"
+                    )
+
                 self.mcnet.optimizer.zero_grad()
                 loss.backward()
                 self.mcnet.optimizer.step()
