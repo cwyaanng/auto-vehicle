@@ -5,7 +5,7 @@ sys.path.append('/home/wise/chaewon/PythonAPI/carla-0.9.8-py3.5-linux-x86_64.egg
 import carla  
 import gym
 import numpy as np
-from agents.sacrnd_model import SACOfflineOnline
+from agents.sacrnd_model_revised import SACOfflineOnline
 from env.env_set import attach_camera_sensor, attach_collision_sensor, connect_to_carla, spawn_vehicle
 from env.route import generate_route, visualize_all_waypoints
 from utils.visualize import generate_actual_path_plot, plot_carla_map
@@ -55,12 +55,12 @@ def main(batch_size):
     rnd = RND(obs_dim, lr=1e-3, device=str(trainer.device))
    
     print("모든 데이터 버퍼에 저장")
-    trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
+    trainer.prefill_from_npz_folder(DATA_DIR)
     print("critic pretrain => warm start")
     trainer.attach_rnd(rnd)
     trainer.pretrain_critic()
     print("모든 주행 데이터 actor behavioral cloning")
-    trainer.pretrain_actor(100000)
+    trainer.pretrain_actor(50000)
     
     
     print("여러 주행 데이터로 mcnet 학습")  
