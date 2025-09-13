@@ -68,7 +68,7 @@ def main(batch_size):
     print("data filling start")
     trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
     print("mcnet 학습중")
-    trainer.train_mcnet_from_buffer(epochs=30)
+    trainer.train_mcnet_from_buffer(epochs=0)
     print("mcnet 모델 저장")
     trainer.save_mcnet_pth(f"mcnet/mcnet_pretrained.pth")
     trainer.save_mcnet_pickle(f"mcnet/mcnet_pretrained.pkl")
@@ -76,7 +76,7 @@ def main(batch_size):
     print("모든 주행 데이터 넣음")
     trainer.prefill_from_npz_folder_mclearn(DATA_DIR)
     trainer.save(f"pretrained_actor_critic_1M.zip")
-    trainer.online_learn(log_interval=50, total_timesteps=1_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
+    trainer.online_learn(log_interval=50, total_timesteps=2_000_000, tb_log_name="logs/"+SIMULATION+"/"+NOW)
 
     trainer.save(f"trained_1M_1M.zip")
     env.close()

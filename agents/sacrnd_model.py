@@ -570,6 +570,8 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         
             min_q_pi_n = (min_q_pi - min_q_pi.mean()) / (min_q_pi.std() + 1e-6)
             g_pi_n = (g_pi - g_pi.mean()) / (g_pi.std() + 1e-6)
+            # 그냥 sac
+            w = 0
             calibrated_q = (1 - w) * min_q_pi_n + w * g_pi_n
 
             if global_update % 5000 == 0:
