@@ -228,5 +228,6 @@ class CarlaWrapperEnv(gym.Env):
         self.vehicle = None
         
     def close(self):
+        self._cleanup()
         self.writer.close()
         super().close()

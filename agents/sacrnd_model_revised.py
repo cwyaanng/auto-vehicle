@@ -577,13 +577,18 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 mean_t = th.tensor(self._nov_rms.mean, device=self.device)
                 std_t  = th.tensor(self._nov_rms.var ** 0.5, device=self.device)
                 nov_z = (nov - mean_t) / (std_t + 1e-6)
-                rnd_norm = nov_z.sigmoid()
-
+                # rnd_norm = nov_z.sigmoid()
                 # 수정: 안정성 위해 clamp 방식 사용
-                w = rnd_norm.clamp(0.05, 0.9)  
-                if nov_z.std() < 1e-4:
-                    w = w * 0 + 0.5
-                
+                # w = rnd_norm.clamp(0.05, 0.9)  
+                # if nov_z.std() < 1e-4:
+                #     w = w * 0 + 0.5
+            
+                w = th.sigmoid(nov_z.abs() - 1.0) # z=1 넘어가야 본격 반영
+                w = w * 0.9                             
+                w = w.detach()
+                if w.dim() == 1:
+                    w = w.view(-1, 1)
+             
             # critic 업데이트 
             current_q1, current_q2 = self.policy.critic(replay_data.observations, replay_data.actions)
             critic_loss = 0.5 * (F.mse_loss(current_q1, target_q_sac) + F.mse_loss(current_q2, target_q_sac))
@@ -622,7 +627,6 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             mu_g  = self.g_rms.mean
             std_g = th.sqrt(self.g_rms.var).clamp_min(1e-6)
 
-            # g를 q 스케일로 선형 매핑: g_cal = (g - μg) * (σq/σg) + μq
             g_pi_cal = (g_pi - mu_g) * (std_q / std_g) + mu_q
 
             # (선택) 과도한 치우침 방지 클램프
