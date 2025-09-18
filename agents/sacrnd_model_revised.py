@@ -118,9 +118,9 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self.ent_coef = 0.5
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
-        checkpoint = th.load("mcnet/mcnet_pretrained.pth")
-        self.mcnet.load_state_dict(checkpoint["model_state_dict"])
-        self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        # checkpoint = th.load("mcnet/mcnet_pretrained.pth")
+        # self.mcnet.load_state_dict(checkpoint["model_state_dict"])
+        # self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
         
         obs_dim = self.observation_space.shape[0]
@@ -135,7 +135,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
 
         self.gamma = 0.99
 
-
+        self.calibrated = 0
    
 
 
@@ -327,15 +327,15 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                     t = target[:5].detach().squeeze(-1).cpu().numpy()
 
                     # 요약 통계 + 일부 샘플만 보여주자 (훈련 느려지지 않게)
-                    print(
-                        f"[MCNet] i={i:06d} | "
-                        f"loss={loss.item():.4f} | "
-                        f"pred[:5]={np.round(p, 3)} | "
-                        f"targ[:5]={np.round(t, 3)} | "
-                        f"pμ={pred.mean().item():.3f} p_sigma={pred.std().item():.3f} | "
-                        f"tμ={target.mean().item():.3f} t_sigma={target.std().item():.3f} | "
-                        f"shape p={tuple(pred.shape)} t={tuple(target.shape)}"
-                    )
+                    # print(
+                    #     f"[MCNet] i={i:06d} | "
+                    #     f"loss={loss.item():.4f} | "
+                    #     f"pred[:5]={np.round(p, 3)} | "
+                    #     f"targ[:5]={np.round(t, 3)} | "
+                    #     f"pμ={pred.mean().item():.3f} p_sigma={pred.std().item():.3f} | "
+                    #     f"tμ={target.mean().item():.3f} t_sigma={target.std().item():.3f} | "
+                    #     f"shape p={tuple(pred.shape)} t={tuple(target.shape)}"
+                    # )
 
                 self.mcnet.optimizer.zero_grad()
                 loss.backward()
@@ -433,7 +433,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         return a, logp
 
     # critic을 offline data로 사전학습하는 함수 
-    def pretrain_critic(self, epochs: int = 8, batch_size: int = 256) -> None:
+    def pretrain_critic(self, epochs: int = 16, batch_size: int = 256) -> None:
         """
         Critic을 Monte Carlo return (self.mc_targets)에 맞춰 supervised pretrain.
         - Actor는 freeze
@@ -577,17 +577,14 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 mean_t = th.tensor(self._nov_rms.mean, device=self.device)
                 std_t  = th.tensor(self._nov_rms.var ** 0.5, device=self.device)
                 nov_z = (nov - mean_t) / (std_t + 1e-6)
-                # rnd_norm = nov_z.sigmoid()
+                rnd_norm = nov_z.sigmoid()
                 # 수정: 안정성 위해 clamp 방식 사용
-                # w = rnd_norm.clamp(0.05, 0.9)  
-                # if nov_z.std() < 1e-4:
-                #     w = w * 0 + 0.5
-            
-                w = th.sigmoid(nov_z.abs() - 1.0) # z=1 넘어가야 본격 반영
-                w = w * 0.9                             
-                w = w.detach()
-                if w.dim() == 1:
-                    w = w.view(-1, 1)
+                # w = rnd_norm.clamp(0.05, 0.9)
+                w = th.sigmoid(nov_z.abs() - 1.0) # z=1 넘길 때 반영
+                w = w * 0.9   
+                
+                # if nov_z.std() < 1e-6:
+                #    w = w * 0 + 0.5                          
              
             # critic 업데이트 
             current_q1, current_q2 = self.policy.critic(replay_data.observations, replay_data.actions)
@@ -611,37 +608,47 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             act_n = self.act_rms.normalize(deterministic_action)
             g_pi = self.mcnet(th.cat([obs_n, act_n], dim=1)).detach()
             
+            
+            cali_q = th.minimum(g_pi,min_q_pi)
+            mask = (g_pi < min_q_pi)
+            self.calibrated += int(mask.sum().item())
+
             # novelty 계산
             w = w.detach()
             if w.dim() == 1:
                 w = w.view(-1, 1)
 
-            if float((self._nov_rms.var ** 0.5).mean()) < 1e-8:
-                w = w * 0.0 + 0.5
-        
+            # if float((self._nov_rms.var ** 0.5).mean()) < 1e-8:
+            #     w = w * 0.0 + 0.5
+            
             self.q_rms.update(min_q_pi.detach())  # (B,1) 또는 (B,)
             self.g_rms.update(g_pi.detach())
 
-            mu_q  = self.q_rms.mean
-            std_q = th.sqrt(self.q_rms.var).clamp_min(1e-6)
-            mu_g  = self.g_rms.mean
-            std_g = th.sqrt(self.g_rms.var).clamp_min(1e-6)
+            # # monte carlo 근사치를 z score 로 바꾼 다음 q 스케일에 맞게 변경 
+            # mu_q  = self.q_rms.mean
+            # std_q = th.sqrt(self.q_rms.var).clamp_min(1e-6)
+            # mu_g  = self.g_rms.mean
+            # std_g = th.sqrt(self.g_rms.var).clamp_min(1e-6)
 
-            g_pi_cal = (g_pi - mu_g) * (std_q / std_g) + mu_q
+            # g_pi_cal = (g_pi - mu_g) * (std_q / std_g) + mu_q
 
-            # (선택) 과도한 치우침 방지 클램프
-            k = 5.0
-            g_pi_cal = th.clamp(g_pi_cal, mu_q - k*std_q, mu_q + k*std_q)
+            # # 과도한 치우침 방지 클램프
+            # k = 5.0
+            # g_pi_cal = th.clamp(g_pi_cal, mu_q - k*std_q, mu_q + k*std_q)
 
             # 절대 스케일 유지한 convex-combine
-            calibrated_q = (1 - w) * min_q_pi + w * g_pi_cal
+            ## SAC 실험 [나중에 제거 필요] ## 
+            # w = 0
+            
+            
+            calibrated_q = (1 - w) * min_q_pi + w * cali_q
 
 
             if global_update % 5000 == 0:
                 print(f"[Update {global_update}]")
                 print("w:", self.tstats(w, "w"))
                 print("q_pi:", self.tstats(min_q_pi, "q_pi"))
-                print("mc_q:", self.tstats(g_pi, "mc_q"))
+                print("mc_q:", self.tstats(g_pi_cal, "mc_q"))
                 print("logp:", self.tstats(log_prob, "logp"))
                 print("alpha:", float(ent_coef.detach().cpu().numpy()))
                 print("cal_q:", self.tstats(calibrated_q, "calibrated_q"))
