@@ -433,7 +433,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         return a, logp
 
     # critic을 offline data로 사전학습하는 함수 
-    def pretrain_critic(self, epochs: int = 16, batch_size: int = 256) -> None:
+    def pretrain_critic(self, epochs: int = 8, batch_size: int = 256) -> None:
         """
         Critic을 Monte Carlo return (self.mc_targets)에 맞춰 supervised pretrain.
         - Actor는 freeze
@@ -612,7 +612,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             cali_q = th.minimum(g_pi,min_q_pi)
             mask = (g_pi < min_q_pi)
             self.calibrated += int(mask.sum().item())
-
+            
             # novelty 계산
             w = w.detach()
             if w.dim() == 1:
@@ -648,10 +648,11 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
                 print(f"[Update {global_update}]")
                 print("w:", self.tstats(w, "w"))
                 print("q_pi:", self.tstats(min_q_pi, "q_pi"))
-                print("mc_q:", self.tstats(g_pi_cal, "mc_q"))
+                print("mc_q:", self.tstats(g_pi, "mc_q"))
                 print("logp:", self.tstats(log_prob, "logp"))
                 print("alpha:", float(ent_coef.detach().cpu().numpy()))
                 print("cal_q:", self.tstats(calibrated_q, "calibrated_q"))
+                print(f"cal_q_count:{self.calibrated}")
                 print("-" * 50)
 
             actor_loss = (ent_coef * log_prob - calibrated_q).mean()
