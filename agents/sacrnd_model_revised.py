@@ -612,7 +612,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             cali_q = th.minimum(g_pi,min_q_pi)
             mask = (g_pi < min_q_pi)
             self.calibrated += int(mask.sum().item())
-            
+       
             # novelty 계산
             w = w.detach()
             if w.dim() == 1:

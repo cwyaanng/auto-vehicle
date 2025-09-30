@@ -92,6 +92,7 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self.obs_rms = RunningMeanStd()
         self.act_rms = RunningMeanStd()
         self.gamma = 0.99
+        self.calibrated = 0
 
     def _alpha(self) -> th.Tensor: # 현재 엔트로피 계수 얻기 
         if self.ent_coef_optimizer is not None:
@@ -560,19 +561,24 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
             act_n = self._normalize_tensor(deterministic_action, self.act_rms.mean, self.act_rms.var)
             g_pi = self.mcnet(th.cat([obs_n, act_n], dim=1)).detach()
             
+            calibrate_q = th.minimum(min_q_pi, g_pi)
+            if calibrate_q == g_pi: 
+                self.calibrated += 1
+                print(f"calibrated_count : {self.calibrated}")
+            
+             
             # novelty 계산
             w = w.detach()
             if w.dim() == 1:
                 w = w.view(-1, 1)
 
-            if float((self._nov_rms.var ** 0.5).mean()) < 1e-8:
-                w = w * 0.0 + 0.5
+            # if float((self._nov_rms.var ** 0.5).mean()) < 1e-8:
+            #     w = w * 0.0 + 0.5
         
-            min_q_pi_n = (min_q_pi - min_q_pi.mean()) / (min_q_pi.std() + 1e-6)
-            g_pi_n = (g_pi - g_pi.mean()) / (g_pi.std() + 1e-6)
-            # 그냥 sac
-            w = 0
-            calibrated_q = (1 - w) * min_q_pi_n + w * g_pi_n
+            # min_q_pi_n = (min_q_pi - min_q_pi.mean()) / (min_q_pi.std() + 1e-6)
+            # g_pi_n = (g_pi - g_pi.mean()) / (g_pi.std() + 1e-6)
+         
+            calibrated_q = (1 - w) * min_q_pi + w * calibrated_q
 
             if global_update % 5000 == 0:
                 print(f"[Update {global_update}]")

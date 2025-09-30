@@ -29,9 +29,10 @@ class CarlaWrapperEnv(gym.Env):
         self.stop_count = 0
         self.camera_save_root = simulation+"/driving_scene" 
         
+        # 수정 : pi 수정
         self.observation_space = spaces.Box(
-            low=np.array([-100.0,-100.0]*15 + [-np.pi, -10.0]),
-            high=np.array([100.0, 100.0]*15 + [np.pi, 10.0]),
+            low=np.array([-100.0,-100.0]*15 + [-np.pi/2, -10.0]),
+            high=np.array([100.0, 100.0]*15 + [np.pi/2, 10.0]),
             dtype=np.float32
         )
 
@@ -228,6 +229,5 @@ class CarlaWrapperEnv(gym.Env):
         self.vehicle = None
         
     def close(self):
-        self._cleanup()
         self.writer.close()
         super().close()
