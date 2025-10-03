@@ -1,0 +1,82 @@
+nohup: ignoring input
+/home/jingjingee198/miniconda/envs/carla/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+[forward] steps 완료: traveled=1998.2 m, steps=1000
+[forward] 경로 생성: 1001 wp, 총 거리 1998.2 m
+[forward] 처음 60개 웨이포인트를 버림 -> 931 wp 남음
+Using cuda device
+cuda
+직선 데이터 버퍼에 저장
+직선 주행 데이터 actor behavioral cloning
+[BC pretrain] step 0 | loss: 0.6685
+[BC pretrain] step 500 | loss: 0.0241
+[BC pretrain] step 1000 | loss: 0.0230
+[BC pretrain] step 1500 | loss: 0.0208
+[BC pretrain] step 2000 | loss: 0.0182
+[BC pretrain] step 2500 | loss: 0.0175
+[BC pretrain] step 3000 | loss: 0.0203
+[BC pretrain] step 3500 | loss: 0.0219
+[BC pretrain] step 4000 | loss: 0.0200
+[BC pretrain] step 4500 | loss: 0.0193
+[BC pretrain] step 5000 | loss: 0.0160
+[BC pretrain] step 5500 | loss: 0.0175
+[BC pretrain] step 6000 | loss: 0.0200
+[BC pretrain] step 6500 | loss: 0.0143
+[BC pretrain] step 7000 | loss: 0.0158
+[BC pretrain] step 7500 | loss: 0.0155
+[BC pretrain] step 8000 | loss: 0.0161
+[BC pretrain] step 8500 | loss: 0.0142
+[BC pretrain] step 9000 | loss: 0.0150
+[BC pretrain] step 9500 | loss: 0.0149
+[BC pretrain] step 10000 | loss: 0.0134
+[BC pretrain] step 10500 | loss: 0.0135
+[BC pretrain] step 11000 | loss: 0.0123
+[BC pretrain] step 11500 | loss: 0.0113
+[BC pretrain] step 12000 | loss: 0.0153
+[BC pretrain] step 12500 | loss: 0.0116
+[BC pretrain] step 13000 | loss: 0.0148
+[BC pretrain] step 13500 | loss: 0.0121
+[BC pretrain] step 14000 | loss: 0.0142
+[BC pretrain] step 14500 | loss: 0.0128
+[BC pretrain] step 15000 | loss: 0.0167
+[BC pretrain] step 15500 | loss: 0.0126
+[BC pretrain] step 16000 | loss: 0.0147
+[BC pretrain] step 16500 | loss: 0.0109
+[BC pretrain] step 17000 | loss: 0.0080
+[BC pretrain] step 17500 | loss: 0.0112
+[BC pretrain] step 18000 | loss: 0.0127
+[BC pretrain] step 18500 | loss: 0.0110
+[BC pretrain] step 19000 | loss: 0.0136
+[BC pretrain] step 19500 | loss: 0.0122
+critic pretrain => warm start
+[SAC&RND CRITIC pretrain] critic loss : 509.0658264160156
+[SAC&RND CRITIC pretrain] critic loss : 57.432823181152344
+여러 주행 데이터로 mcnet 학습
+data filling start
+mcnet 학습중
+[MCNet] Epoch 1/30 | Loss: 16731.9707
+[MCNet] Epoch 2/30 | Loss: 19678.9316
+[MCNet] Epoch 3/30 | Loss: 16961.5059
+[MCNet] Epoch 4/30 | Loss: 24387.7891
+[MCNet] Epoch 5/30 | Loss: 16882.3926
+[MCNet] Epoch 6/30 | Loss: 18371.3613
+[MCNet] Epoch 7/30 | Loss: 20060.6992
+[MCNet] Epoch 8/30 | Loss: 21096.0000
+[MCNet] Epoch 9/30 | Loss: 16327.1709
+[MCNet] Epoch 10/30 | Loss: 19179.3633
+[MCNet] Epoch 11/30 | Loss: 15649.1836
+[MCNet] Epoch 12/30 | Loss: 17465.8203
+[MCNet] Epoch 13/30 | Loss: 17152.9004
+[MCNet] Epoch 14/30 | Loss: 15783.1855
+[MCNet] Epoch 15/30 | Loss: 12773.5840
+[MCNet] Epoch 16/30 | Loss: 16180.8018
+[MCNet] Epoch 17/30 | Loss: 15565.5918
+[MCNet] Epoch 18/30 | Loss: 16199.4189
+[MCNet] Epoch 19/30 | Loss: 11452.5752
+[MCNet] Epoch 20/30 | Loss: 19891.1113
+[MCNet] Epoch 21/30 | Loss: 13948.9395
+[MCNet] Epoch 22/30 | Loss: 15050.6074
+[MCNet] Epoch 23/30 | Loss: 13728.1904
+[MCNet] Epoch 24/30 | Loss: 13434.5625
+[MCNet] Epoch 25/30 | Loss: 13055.6680
+[MCNet] Epoch 26/30 | Loss: 14069.9297

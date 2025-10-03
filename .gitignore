@@ -9,6 +9,5 @@ dataset_1/
 models/
 plots/
 pretrained_actor_critic_1M.zip
+mcnet/
 trained_1M_1M.zip
-cql_offline_online.d3
-d3rlpy_logs

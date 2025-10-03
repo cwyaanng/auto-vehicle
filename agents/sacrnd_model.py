@@ -84,9 +84,9 @@ class SACOfflineOnline(SAC): # SAC 상속한 커스텀 에이전트
         self.ent_coef = 0.5
         self.mc_targets = []
         self.mcnet = MCNet(input_dim=self.observation_space.shape[0] + self.action_space.shape[0]).to(self.device)
-        checkpoint = th.load("mcnet/mcnet_pretrained.pth")
-        self.mcnet.load_state_dict(checkpoint["model_state_dict"])
-        self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        # checkpoint = th.load("mcnet/mcnet_pretrained.pth")
+        # self.mcnet.load_state_dict(checkpoint["model_state_dict"])
+        # self.mcnet.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
         
         self.obs_rms = RunningMeanStd()
